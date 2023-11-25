@@ -90,3 +90,149 @@
   cursor: pointer;
   outline: none;
 }
+.frontpage {
+  background-color: #ffb20fbf;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.frontpage .overlap-group-wrapper {
+  background-color: #ffb20fbf;
+  height: 1024px;
+  overflow: hidden;
+  width: 1440px;
+}
+
+.frontpage .overlap-group {
+  height: 1024px;
+  position: relative;
+  width: 1452px;
+}
+
+.frontpage .img,
+.frontpage .div,
+.frontpage .line {
+  position: fixed;
+  z-index: 1000;
+}
+
+.frontpage .img {
+  top: 4px;
+  left: 19px;
+  height: 105px;
+  width: 105px;
+}
+
+.frontpage .rectangle {
+  height: 1024px;
+  left: 656px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 784px;
+}
+
+.frontpage .text-wrapper {
+  color: #ffffff;
+  font-family: "Jacques Francois-Regular", Helvetica;
+  font-size: 29px;
+  font-weight: 400;
+  left: 50px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 619px;
+  width: 540px;
+}
+
+.frontpage .EAT-TO-BE-HEALTHY {
+  color: #000000;
+  font-family: "Julius Sans One-Regular", Helvetica;
+  font-size: 60px;
+  font-weight: 400;
+  left: 50px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 439px;
+  width: 337px;
+}
+
+.frontpage .div {
+  color: #000000;
+  font-family: "Jacques Francois-Regular", Helvetica;
+  font-size: 35px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  top: 31px;
+  left: 129px;
+  white-space: nowrap;
+}
+
+.frontpage .line {
+  width: 152px;
+  left: 483px;
+  height: 1px;
+  top: 56px;
+  background-color: #000000;
+  object-fit: cover;
+  /* margin: 10px 0;  */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 680px;
+  top: 39px;
+  width: 272px;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: #ffffff; 
+  font-family: "Calibri-Bold", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  margin: 83px; 
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #ffb20fbf;
+}
+
+.navbar a:last-child {
+  border: 1px solid #ffffff;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 25px;
+}
+
+.frontpage .rectangle-2 {
+  border: 1px solid;
+  border-color: #ffffff;
+  border-radius: 25px;
+  height: 55px;
+  left: 1234px;
+  position: absolute;
+  top: 26px;
+  width: 164px;
+}
+
+.frontpage .rectangle-3 {
+  height: 1024px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
