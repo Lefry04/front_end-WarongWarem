@@ -14,6 +14,7 @@ import Reservation  from "./Reservation";
 import TableRes1 from "./TableRes1";
 import ResReser1 from "./ResReser1";
 import Pay1 from "./Pay1";
+import ContactUs from "./ContactUs";
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
         <Route path="/tableres1" element={<TableRes1 />} />
         <Route path="/resreser1" element={<ResReser1 />} />
         <Route path="/pay1" element={<Pay1 />} />
+        <Route path="/contactuspage" element={<ContactUs />} /> 
       </Routes>
     </Router>
   );
