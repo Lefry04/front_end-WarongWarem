@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 
 export const TableRes1 = () =>{
 
-    const goToPay1 = () => {
-        navigate("/pay1");
+    const goToMenu = () => {
+        navigate("/menu1");
       };
 
 const navigate= useNavigate();
@@ -31,7 +31,7 @@ const navigate= useNavigate();
             <input placeholder="Select the desired date for your table reservation." className="d1"></input>
             <input placeholder="If there are any special requests, such as table preferences or dietary needs, inform us here." className="e1"></input>
             <input placeholder="Please choose an available table." className="f1"></input>
-            <button className="button" onClick={goToPay1}>NEXT</button>
+            <button className="button" onClick={goToMenu}>NEXT</button>
             </div>
             </div>
             </div>
