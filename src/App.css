@@ -1452,3 +1452,162 @@
   border-radius: 24px;
   text-align: center;
 }
+
+
+.creditdebit .rectangle{
+  -webkit-backdrop-filter: blur(134.19px) brightness(100%);
+  backdrop-filter: blur(134.19px) brightness(100%);
+  background-color: #ffffff1a;
+  height: 1102px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.creditdebit .a {
+  color: #ffffff;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 40px;
+  font-weight: 700;
+  left: 203px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  text-indent: 20px;
+  height: 134px;
+  top: 156px;
+  width: 1086px;
+  background-color: #000000;
+}
+
+.creditdebit .c {
+  background-color: rgba(255, 178, 15, 0.50);
+  font-family: "IBM Plex Sans-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 156px;
+  height: 682px;
+  left: 203px;
+  width: 1086px;
+}
+
+.creditdebit .mastercard {
+  height: 51px;
+  left: 245px;
+  position: absolute;
+  top: 330px;
+  width: 83px;
+  background: none;
+}
+
+.creditdebit .textone {
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 20px;
+  color: #000000;
+  height: 26px;
+  left: 342px;
+  position: absolute;
+  top: 320px;
+  width: 268px;
+}
+
+.creditdebit .vector {
+  height: 51px;
+  left: 245px;
+  position: absolute;
+  top: 410px;
+  width: 83px;
+  background: none;
+}
+
+.creditdebit .texttwo {
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 20px;
+  color: #000000;
+  height: 66px;
+  left: 342px;
+  position: absolute;
+  top: 404px;
+  width: 268px;
+}
+
+.creditdebit .line1 {
+  color: #ffffff;
+  background-color: #000000;
+  height: 1px;
+  left: 204px;
+  position: absolute;
+  top: 395px;
+  width: 1086px;
+}
+
+.creditdebit .line2 {
+  background-color: #000000;
+  height: 1px;
+  left: 204px;
+  position: absolute;
+  top: 495px;
+  width: 1086px;
+}
+
+.creditdebit .line3 {
+  background-color: #ffffff;
+  opacity: 47%;
+  height: 100px;
+  left: 647px;
+  position: absolute;
+  top: 680px;
+  width: 570px;
+  border-radius: 24px;
+}
+
+.creditdebit .line4 {
+  background-color: #000000;
+  height: 50px;
+  left: 1024px;
+  position: absolute;
+  top: 704px;
+  width: 159px;
+  border-radius: 24px;
+}
+
+.creditdebit .text3 {
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000000;
+  height: 52px;
+  left: 690px;
+  position: absolute;
+  top: 688px;
+  width: 133px;
+}
+
+.creditdebit .text4 {
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 12px;
+  color: #000000;
+  height: 52px;
+  left: 690px;
+  position: absolute;
+  top: 720px;
+  width: 133px;
+}
+
+.creditdebit .text5 {
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffffff;
+  height: 52px;
+  left: 1036px;
+  position: absolute;
+  top: 697px;
+  width: 135px;
+}

@@ -27,7 +27,6 @@ export const DashCust = () => {
   const goToPay1 = () => {
     navigate("/pay1");
   };
-
   
   return (
     <div className="dash-cust">
@@ -45,7 +44,7 @@ export const DashCust = () => {
           <div className="reservation"><img src="image 29.png" /></div>
           <button className="history">History</button>
           <div className="history-icon"><img src="history.png"/></div>
-          <button className="feedback" onClick={goToPay1}>Feedback</button>
+          <button className="feedback">Feedback</button>
           <div className="feedback-icon"><img src="feedback.png"/></div>
         </div>
       </div>

@@ -16,6 +16,7 @@ import ResReser1 from "./ResReser1";
 import Pay1 from "./Pay1";
 import ContactUs from "./ContactUs";
 import Menu1 from "./Menu1";
+import CreditDebit from "./CreditDebit";
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="/pay1" element={<Pay1 />} />
         <Route path="/contactuspage" element={<ContactUs />} /> 
         <Route path="/menu1" element={<Menu1 />} />
+        <Route path="/creditdebit" element={<CreditDebit />} />
       </Routes>
     </Router>
   );
