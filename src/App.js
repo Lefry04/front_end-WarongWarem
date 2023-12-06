@@ -1,6 +1,7 @@
 import "./App.css";
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ScrollToTop from './ScrollToTop';
 import FrontPage from './FrontPage';
 import LoginPageCust from "./LoginPageCust";
 import AboutUsPage from "./AboutUsPage";
@@ -24,6 +25,7 @@ import ResultCash from "./ResultCash";
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<FrontPage />} />
         <Route path="/loginpagecust" element={<LoginPageCust />} />

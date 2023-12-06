@@ -16,7 +16,7 @@ export const ResultDebit = () => {
                         <img className="image" alt="Image" src="background.png" />
                         <div className="rectangle" />
                         <div className="line1" />
-                        <button className="line2" onClick={goToD}>
+                        <button className="line2" onClick={goToDashCust}>
                             <span> Back to Dashboard </span> 
                         </button>
                         <p className="one">Your Payment and Reservation is Successful</p>
