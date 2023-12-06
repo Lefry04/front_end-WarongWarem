@@ -19,6 +19,7 @@ import Menu1 from "./Menu1";
 import CreditDebit from "./CreditDebit";
 import Cash from "./Cash";
 import ResultDebit from "./ResultDebit";
+import ResultCash from "./ResultCash";
 
 const App = () => {
   return (
@@ -42,6 +43,7 @@ const App = () => {
         <Route path="/creditdebit" element={<CreditDebit />} />
         <Route path="/cash" element={<Cash />} />
         <Route path="/resultdebit" element={<ResultDebit />} />
+        <Route path="/resultcash" element={<ResultCash />} />
       </Routes>
     </Router>
   );
