@@ -1,6 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export const CreditDebit = () => {
+    const navigate = useNavigate();
+
+    const goToresultdebit=()=>{
+        navigate('/resultdebit');
+    };
     return (
         <div className="creditdebit">
             <div className="background">
@@ -20,7 +26,7 @@ export const CreditDebit = () => {
                         <div className="line4" />
                         <p className="text3">Rp. 50.000,00</p>
                         <p className="text4">View detailed bill</p>
-                        <p className="text5">Proceed to Pay</p>
+                        <p className="text5" onClick={goToresultdebit}>Proceed to Pay</p>
                     </div>
                 </div>
             </div>
