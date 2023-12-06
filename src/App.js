@@ -10,13 +10,14 @@ import LoginPageMan from "./LoginPageMan";
 import DashCust from "./DashCust";
 import DashWai from "./DashWai";
 import DashMan from "./DashMan";
-import Reservation  from "./Reservation";
+import Reservation from "./Reservation";
 import TableRes1 from "./TableRes1";
 import ResReser1 from "./ResReser1";
 import Pay1 from "./Pay1";
 import ContactUs from "./ContactUs";
 import Menu1 from "./Menu1";
 import CreditDebit from "./CreditDebit";
+import Cash from "./Cash";
 
 const App = () => {
   return (
@@ -35,9 +36,10 @@ const App = () => {
         <Route path="/tableres1" element={<TableRes1 />} />
         <Route path="/resreser1" element={<ResReser1 />} />
         <Route path="/pay1" element={<Pay1 />} />
-        <Route path="/contactuspage" element={<ContactUs />} /> 
+        <Route path="/contactuspage" element={<ContactUs />} />
         <Route path="/menu1" element={<Menu1 />} />
         <Route path="/creditdebit" element={<CreditDebit />} />
+        <Route path="/cash" element={<Cash />} />
       </Routes>
     </Router>
   );

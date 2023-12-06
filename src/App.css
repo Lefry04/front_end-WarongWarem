@@ -90,6 +90,7 @@
   cursor: pointer;
   outline: none;
 }
+
 .frontpage {
   background-color: #ffb20fbf;
   display: flex;
@@ -192,7 +193,7 @@
 }
 
 .navbar a {
-  color: #ffffff; 
+  color: #ffffff;
   font-family: "Calibri-Bold", Helvetica;
   font-size: 20px;
   font-weight: 700;
@@ -200,7 +201,7 @@
   line-height: normal;
   text-align: center;
   white-space: nowrap;
-  margin: 83px; 
+  margin: 83px;
   text-decoration: none;
 }
 
@@ -805,7 +806,7 @@
   text-align: center;
 }
 
-.loginpagecust .error-message-2{
+.loginpagecust .error-message-2 {
   color: red;
   font-size: 16px;
   margin-top: 0px;
@@ -955,7 +956,7 @@
   font-family: "Inter-Bold", Helvetica;
   font-size: 50px;
   font-weight: bolder;
-  left:120px;
+  left: 120px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
@@ -991,7 +992,7 @@
   font-family: "Inter-Bold", Helvetica;
   font-size: 50px;
   font-weight: bolder;
-  left:743px;
+  left: 743px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
@@ -1027,7 +1028,7 @@
   font-family: "Inter-Bold", Helvetica;
   font-size: 50px;
   font-weight: bolder;
-  left:120px;
+  left: 120px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
@@ -1136,7 +1137,7 @@
 .tableres1 .c1,
 .tableres1 .d1,
 .tableres1 .e1,
-.tableres1 .f1{
+.tableres1 .f1 {
   color: #ffffff;
   background-color: transparent;
   border: 1px solid #ffffff;
@@ -1154,7 +1155,7 @@
   border-radius: 30px;
 }
 
-.tableres1 input{
+.tableres1 input {
   text-indent: 10px;
 }
 
@@ -1167,7 +1168,7 @@
 .tableres1 .c1::placeholder,
 .tableres1 .d1::placeholder,
 .tableres1 .e1::placeholder,
-.tableres1 .f1::placeholder{
+.tableres1 .f1::placeholder {
   color: #ffffff;
 }
 
@@ -1189,7 +1190,7 @@
   position: absolute;
 }
 
-.tableres1 .c1{
+.tableres1 .c1 {
   top: 626px;
 }
 
@@ -1204,13 +1205,13 @@
   top: 779px;
 }
 
-.tableres1 .question .e{
+.tableres1 .question .e {
   left: 114px;
   top: 872px;
   position: absolute;
 }
 
-.tableres1 .e1{
+.tableres1 .e1 {
   top: 932px;
 }
 
@@ -1220,7 +1221,7 @@
   position: absolute;
 }
 
-.tableres1 .f1{
+.tableres1 .f1 {
   top: 1085px;
 }
 
@@ -1390,7 +1391,7 @@
 }
 
 .menu1 .buttonorder {
-  background-color:rgba(255, 255, 255, 0.50);
+  background-color: rgba(255, 255, 255, 0.50);
   font-size: 20px;
   font-weight: bold;
   left: 353px;
@@ -1454,7 +1455,7 @@
 }
 
 
-.creditdebit .rectangle{
+.creditdebit .rectangle {
   -webkit-backdrop-filter: blur(134.19px) brightness(100%);
   backdrop-filter: blur(134.19px) brightness(100%);
   background-color: #ffffff1a;
@@ -1465,7 +1466,7 @@
   width: 100%;
 }
 
-.creditdebit .a {
+.creditdebit .title {
   color: #ffffff;
   font-family: "Inter-Bold", Helvetica;
   font-size: 40px;
@@ -1479,6 +1480,7 @@
   height: 134px;
   top: 156px;
   width: 1086px;
+  border-radius: 0;
   background-color: #000000;
 }
 
@@ -1610,4 +1612,112 @@
   position: absolute;
   top: 697px;
   width: 135px;
+}
+
+.cash .rectangle {
+  -webkit-backdrop-filter: blur(134.19px) brightness(100%);
+  backdrop-filter: blur(134.19px) brightness(100%);
+  background-color: #ffffff1a;
+  height: 1102px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.cash .line1 {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 156px;
+  height: 682px;
+  left: 203px;
+  width: 1086px;
+}
+
+.cash .line2 {
+  position: absolute;
+  height: 134px;
+  left: 203px;
+  top: 156px;
+  width: 1086px;
+  background-color: #000000;
+}
+
+.cash .line3 {
+  position: absolute;
+  left: 460px;
+  top: 560px;
+  width: 540px;
+  height: 100px;
+  border-radius: 24px;
+  flex-shrink: 0;
+  background-color: rgba(255, 178, 15, 0.70);;
+}
+
+.cash .title {
+  color: #ffffff;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 40px;
+  font-weight: 700;
+  left: 210px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  text-indent: 20px;
+  height: 134px;
+  top: 156px;
+  width: 1086px;
+}
+
+.cash .one {
+  color: #000000;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 40px;
+  font-weight: 700;
+  left: 300px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  text-indent: 20px;
+  height: 134px;
+  top: 375px;
+  width: 844px;
+}
+
+.cash .two {
+  color: #FFF;
+  text-align: center;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  left: 460px;
+  top: 548px;
+  width: 540px;
+  height: 100px;
+  border-radius: 24px;
+  flex-shrink: 0;
+}
+
+.cash .three {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  position: absolute;
+  left: 1025px;
+  top: 725px;
+  width: 320px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  flex-shrink: 0;
 }
