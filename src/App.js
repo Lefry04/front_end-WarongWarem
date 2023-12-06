@@ -18,6 +18,7 @@ import ContactUs from "./ContactUs";
 import Menu1 from "./Menu1";
 import CreditDebit from "./CreditDebit";
 import Cash from "./Cash";
+import ResultDebit from "./ResultDebit";
 
 const App = () => {
   return (
@@ -40,6 +41,7 @@ const App = () => {
         <Route path="/menu1" element={<Menu1 />} />
         <Route path="/creditdebit" element={<CreditDebit />} />
         <Route path="/cash" element={<Cash />} />
+        <Route path="/resultdebit" element={<ResultDebit />} />
       </Routes>
     </Router>
   );
