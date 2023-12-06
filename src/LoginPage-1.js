@@ -1,15 +1,22 @@
 // LoginPage.js
 import React, { useState } from 'react';
-import CustomerLoginForm from './CustomerLoginForm';
-import WaitressLoginForm from './WaitressLoginForm';
-import ManagerLoginForm from './ManagerLoginForm';
+import { useNavigate } from 'react-router-dom';
 
-const LoginPage = () => {
-  const [selectedRole, setSelectedRole] = useState(null);
+export const LoginPage = () => {
 
-  const handleRoleClick = (role) => {
-    setSelectedRole(role);
-  };
+const navigate = useNavigate();
+
+const goToLoginPageCust = () => {
+    navigate('/loginpagecust');
+};
+
+const goToLoginPageMan = () => {
+    navigate('/loginpageman');
+};
+
+const goToLoginPageWai = () => {
+    navigate('/loginpagewai');
+};
 
   return (
     <div className="loginpage">
@@ -17,15 +24,12 @@ const LoginPage = () => {
         <div className="overlap-group">
           <div className="rectangle" />
           <img className="img" alt="Rectangle" src="/Chingri Posto _ Experiences of a Gastronomad.jpeg" />
-          <button className="button" onClick={() => handleRoleClick('customer')}>LOG IN AS A CUSTOMER</button>
-          <button className="button2" onClick={() => handleRoleClick('waitress')}>LOG IN AS A WAITRESS</button>
-          <button className="button3" onClick={() => handleRoleClick('manager')}>LOG IN AS A MANAGER</button>
+          <a className="button" onClick={goToLoginPageCust}>LOG IN AS A CUSTOMER</a>
+          <a className="button2" onClick={goToLoginPageWai}>LOG IN AS A WAITER</a>
+          <a className="button3" onClick={goToLoginPageMan}>LOG IN AS A MANAGER</a>
         </div>
       </div>
 
-      {selectedRole === 'customer' && <CustomerLoginForm />}
-      {selectedRole === 'waitress' && <WaitressLoginForm />}
-      {selectedRole === 'manager' && <ManagerLoginForm />}
     </div>
   );
 };

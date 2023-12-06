@@ -1,0 +1,363 @@
+.contact-us {
+    background-color: #e9a410f6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+  
+.contact-us .overlap-wrapper {
+    background-color: #e9a410bc;
+    height: 1024px;
+    width: 1440px;
+}
+  
+.contact-us .overlap {
+    height: 1054px;
+    position: relative;
+}
+  
+.contact-us .background-gradient {
+    height: 1024px;
+    left: 10px;
+    position: absolute;
+    top: 0;
+    width: 1420px;
+}
+  
+.contact-us .overlap-group {
+    height: 692px;
+    left: 21px;
+    position: relative;
+    top: -201px;
+    width: 1324px;
+}
+  
+.contact-us .ellipse {
+    background-color: #ff0000bb;
+    border-radius: 396.79px/181.19px;
+    filter: blur(299.69px);
+    height: 400px;
+    left: 500px;
+    position: absolute;
+    top: 54px;
+    width: 794px;
+}
+  
+.contact-us .div {
+    background-color: #0f0e0e4f;
+    border-radius: 397.16px/346.25px;
+    filter: blur(299.69px);
+    height: 692px;
+    left: 292px;
+    position: absolute;
+    top: 0;
+    width: 794px;
+}
+  
+.contact-us .ellipse-2 {
+    background-color: #00000095;
+    border-radius: 396.79px/235.48px;
+    filter: blur(299.69px);
+    height: 471px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 794px;
+}
+  
+.contact-us .rectangle {
+    height: 784px;
+    left: 140px;
+    position: absolute;
+    top: 240px;
+    width: 1180px;
+}
+  
+.contact-us .text-wrapper {
+    color: #ffffff;
+    font-family: "Kadwa-Bold", Helvetica;
+    font-size: 48px;
+    font-weight: 700;
+    left: 550px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 80px;
+    white-space: nowrap;
+    width: 150px;
+}
+  
+.contact-us .text-wrapper-2 {
+    color: var(--lightlight-1);
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 26px;
+    font-weight: 450px;
+    left: 500px;
+    letter-spacing: 0px;
+    line-height: 100px;
+
+    position: absolute;
+    text-align: center;
+    top: 149px;
+    white-space: nowrap;
+}
+  
+.contact-us .union {
+    height: 450px;
+    left: 770px;
+    position: absolute;
+    top: 330px;
+    width: 470px;
+}
+  
+.contact-us .group {
+    height: 650px;
+    left: 230px;
+    position: absolute;
+    top: 330px;
+    width: 480px;
+}
+  
+.contact-us .img {
+    height: 155px;
+    left: 770px;
+    position: absolute;
+    top: 830px;
+    width: 470px;
+}
+  
+.contact-us .rectangle-2 {
+    height: 1024px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1440px;
+}
+  
+.contact-us .p {
+    color: #ffffff;
+    font-family: "Inter-Bold", Helvetica;
+    font-size: 45px;
+    font-weight: 700;
+    left: 270px;
+    letter-spacing: 0;
+    line-height: 64px;
+    position: absolute;
+    top: 355px;
+    width: 380px;
+}
+  
+.contact-us .text-wrapper-3 {
+    color: #ffffff;
+    font-family: "Inter-Bold", Helvetica;
+    font-size: 25px;
+    font-weight: 700;
+    left: 860px;
+    letter-spacing: 0;
+    line-height: 64px;
+    position: absolute;
+    top: 839px;
+    width: 370px;
+}
+  
+.contact-us .whatsapp-image {
+    height: 56px;
+    left: 800px;
+    object-fit: cover;
+    position: absolute;
+    top: 843px;
+    width: 56px;
+}
+  
+.contact-us .whatsapp-image-2 {
+    height: 56px;
+    left: 800px;
+    object-fit: cover;
+    position: absolute;
+    top: 913px;
+    width: 56px;
+}
+  
+.contact-us .text-wrapper-4 {
+    color: #ffffff;
+    font-family: "Inter-Bold", Helvetica;
+    font-size: 25px;
+    font-weight: 700;
+    left: 860px;
+    letter-spacing: 0;
+    line-height: 64px;
+    position: absolute;
+    top: 907px;
+    white-space: nowrap;
+}
+  
+  .contact-us .rectangle-3 {
+    height: 46px;
+    left: 804px;
+    position: absolute;
+    top: 397px;
+    width: 413px;
+}
+  
+.contact-us .text-wrapper-5 {
+    color: #000000;
+    font-family: "Calibri-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    left: 820px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 367px;
+    width: 435px;
+}
+  
+.contact-us .rectangle-4 {
+    border: 3px solid;
+    border-color: #ffffffbf;
+    border-radius: 30px;
+    height: 46px;
+    left: 804px;
+    position: absolute;
+    top: 523px;
+    width: 413px;
+}
+  
+.contact-us .text-wrapper-6 {
+    color: #000000;
+    font-family: "Calibri-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    left: 825px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 479px;
+    width: 435px;
+}
+  
+.contact-us .rectangle-5 {
+    border: 3px solid;
+    border-color: #ffffffbf;
+    border-radius: 30px;
+    height: 200px;
+    left: 820px;
+    position: absolute;
+    top: 625px;
+    width: 410px;
+}
+  
+.contact-us .text-wrapper-7 {
+    color: #000000;
+    font-family: "Calibri-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    left: 820px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 560px;
+    width: 435px;
+}
+
+.name{
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  position: absolute;
+  border-radius: 30px;
+  width: 407px;
+  height: 40px;
+  left: 820px;
+  top: 400px;
+  text-indent: 10px;
+}
+
+.Email{
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  position: absolute;
+  border-radius: 30px;
+  width: 407px;
+  height: 40px;
+  left: 820px;
+  top: 507px;
+  text-indent: 10px;
+} 
+
+.Whatcanwe{
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  position: absolute;
+  border-radius: 30px;
+  width: 407px;
+  height: 91px;
+  left: 820px;
+  top: 620px;
+  text-indent: 10px;
+} 
+
+button {
+  height: 54px;
+  left: 915px;
+  position: absolute;
+  top: 723px;
+  width: 195px;
+  border-radius: 24px;
+  background-color: #00000095;
+  color: #ffffff;
+}
+ 
+
+
+.latar1 {
+  height: 784px;
+  left: 140px;
+  position: absolute;
+  top: 240px;
+  width: 1180px;
+}
+
+.latar2 {
+  height: 658px;
+  left: 226px;
+  position: absolute;
+  top: 330px;
+  width: 488px;
+}
+
+.latar3 {
+    height: 155px;
+    left: 785px;
+    position: absolute;
+    top: 829px;
+    width: 470px;
+  
+}
+
+.latar4 {
+   height: 450px;
+   left: 790px;
+   position: absolute;
+   top: 330px;
+   width: 470px;
+}
+
+.kotak {
+    height: 56px;
+    width: 56px;
+    left: 800px;
+    top: 843px;
+    position: absolute;
+}
+
+.telfon {
+    height: 56px;
+    width: 56px;
+    left: 800px;
+    top: 913px;
+    position: absolute;  
+}

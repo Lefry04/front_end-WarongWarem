@@ -1,12 +1,22 @@
 import React from 'react';
 import "./App.css";
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 // import LoginPage from './LoginPage-1';
 
-export const Frontpage = ({ changePage }) => {
+export const Frontpage = () => {
+
+const navigate = useNavigate();
 
 const goToLoginPage = () => {
-        changePage('login');
+      navigate('/loginpagecust');
+};
+
+const goToAboutUsPage = () => {
+    navigate('/aboutuspage');
+};
+
+const goToContactUsPage = () => {
+  navigate('/contactuspage');
 };
 
   return (
@@ -27,8 +37,8 @@ const goToLoginPage = () => {
           <div className="div">WARUNGWAREM</div>
           <div className="line" />
           <div className="navbar">
-          <a href="#about">About Us</a>
-          <a href="#contact">Contact Us</a>
+          <a onClick={goToAboutUsPage}>About Us</a>
+          <a on onClick={goToContactUsPage}>Contact Us</a>
           <a onClick={goToLoginPage}>Login</a>
           </div>
         </div> 
