@@ -24,8 +24,8 @@ export const DashCust = () => {
     navigate("/reservation");
   };
 
-  const goToPay1 = () => {
-    navigate("/pay1");
+  const goToHistory = () => {
+    navigate("/history");
   };
 
   
@@ -43,9 +43,9 @@ export const DashCust = () => {
           <div className="text-wrapper-3">{currentDate}</div>
           <button className="text-wrapper-4" onClick={goToReservation}>Reservation</button>
           <div className="reservation"><img src="image 29.png" /></div>
-          <button className="history">History</button>
+          <button className="history" onClick={goToHistory}>History</button>
           <div className="history-icon"><img src="history.png"/></div>
-          <button className="feedback" onClick={goToPay1}>Feedback</button>
+          <button className="feedback">Feedback</button>
           <div className="feedback-icon"><img src="feedback.png"/></div>
         </div>
       </div>

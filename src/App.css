@@ -202,6 +202,7 @@
   white-space: nowrap;
   margin: 83px; 
   text-decoration: none;
+  cursor: pointer; /* baru */
 }
 
 .navbar a:hover {
@@ -593,6 +594,10 @@
   width: 100%;
 }
 
+.sign-up-page input { /* baru */
+  text-indent: 10px;
+}
+
 .sign-up-page .background-gradient-wrapper {
   background-color: #000000b2;
   height: 1024px;
@@ -789,7 +794,7 @@
   width: 150px;
 }
 
-.sign-up-page .div-wrapper {
+.sign-up-page .div-wrapper button { /* m */
   background-size: 100% 100%;
   background-color: #FFB20F;
   border-radius: 300px;
@@ -868,6 +873,17 @@
   width: 1065px;
 }
 
+.waiter .rectangle {
+  -webkit-backdrop-filter: blur(134.19px) brightness(100%);
+  backdrop-filter: blur(134.19px) brightness(100%);
+  background-color: #ffffff1a;
+  height: 1102px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .dash-cust .text-wrapper,
 .dashwai .text-wrapper,
 .dashman .text-wrapper {
@@ -919,6 +935,19 @@
   width: 400px;
 }
 
+.waiter .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "Poppins-Bold", Helvetica;
+  font-size: 60px;
+  font-weight: 700;
+  left: 135px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 80px;
+  width: 400px;
+}
+
 .dash-cust .text-wrapper-3,
 .dashwai .text-wrapper-3,
 .dashman .text-wrapper-3 {
@@ -931,6 +960,18 @@
   line-height: normal;
   position: absolute;
   top: 608px;
+}
+
+.waiter .text-wrapper-3 {
+  color: #ffffff;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 30px;
+  font-weight: 400;
+  left: 1330px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 100px;
 }
 
 .dash-cust .text-wrapper-4 {
@@ -1146,8 +1187,7 @@
   left: 114px;
   letter-spacing: 0;
   line-height: normal;
-  position: absolute;
-  top: 320px;
+  position: absolute; /* l */
   white-space: nowrap;
   width: 822px;
   height: 51px;
@@ -1158,7 +1198,32 @@
   text-indent: 10px;
 }
 
-.tableres1 .a1 {
+.resreser1 input{ /* m */
+  background-color: transparent;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  white-space: nowrap;
+  border-radius: 30px;
+  width: 822px;
+  height: 51px;
+  left: 114px;
+  text-indent: 10px;
+}
+
+.resreser1 input::placeholder{
+  color: #ffffff;
+  text-indent: 10px;
+}
+
+.tableres1 .a1,
+.resreser1 .a1 {
   top: 320px;
 }
 
@@ -1178,7 +1243,8 @@
   position: absolute;
 }
 
-.tableres1 .b1 {
+.tableres1 .b1, /* m */
+.resreser1 .b1 {
   top: 473px;
 }
 
@@ -1189,7 +1255,8 @@
   position: absolute;
 }
 
-.tableres1 .c1{
+.tableres1 .c1,
+.resreser1 .c1{ /* m */
   top: 626px;
 }
 
@@ -1200,7 +1267,8 @@
   position: absolute;
 }
 
-.tableres1 .d1 {
+.tableres1 .d1,
+.resreser1 .d1 { /* m*/
   top: 779px;
 }
 
@@ -1224,19 +1292,31 @@
   top: 1085px;
 }
 
-.tableres1 .button {
+.tableres1 select{
+  text-indent: 10px;
+}
+
+.tableres1 .button, /*m*/
+.resreser1 button {
   background-size: 100% 100%;
   background-color: #FFB20F;
   border-radius: 300px;
   height: 41px;
   left: 400px;
   position: absolute;
-  top: 1200px;
-  width: 195px;
+  width: 195px; /*l*/
   color: #000000;
   font-family: "Inter-Bold", Helvetica;
   font-size: 20px;
   font-weight: 700;
+}
+
+.tableres1 button{ /*b*/
+  top: 1200px;
+}
+
+.resreser1 button{
+  top: 900px;
 }
 
 .dashwai {
@@ -1329,4 +1409,162 @@
   top: 360px;
   width: 320px;
   height: 390px;
+}
+/*b*/
+.history .title{
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: rgba(255, 178, 15, 0.75);
+  position: absolute;
+  width: 826px;
+  height: auto;
+  top: 100px;
+  left: 105px;
+  text-align: center;
+  border-radius: 24px;
+}
+
+.history button {
+  position: relative;
+  width: 826px;
+  height: 80px;
+  left: 105px;
+  top: 300px;
+  border-radius: 24px;
+}
+
+.history .a,
+.history .b,
+.history .c{
+  left: 10px;
+  position: absolute;
+}
+
+.history .a{
+  top: 0px;
+  font-weight: bold;
+}
+
+.history .b{
+  top: 20px;
+}
+
+.waiter .blur {
+  position: absolute;
+  width: 1327px;
+  height: 605px;
+  left: 135px;
+  top: 200px;
+  background-color: rgba(255, 252, 252, 0.5);
+  border-radius: 8px;
+}
+
+.waiter .a {
+  position: absolute;
+  color: #000000;
+  font-weight: bold;
+  font-size: 26px;
+  left: 160px;
+  top: 200px;
+}
+
+.waiter .b {
+  position: absolute;
+  color: #000000;
+  font-size: 17px;
+  left: 350px;
+  top: 215px;
+}
+
+.waiter .c {
+  position: absolute;
+  color: #000000;
+  font-size: 19px;
+  left: 160px;
+  top: 245px;
+}
+
+.waiter button {
+  width: 108px;
+  height: 40px;
+  position: absolute;
+  top: 900px;
+  border: none;
+  color: #000000;
+  border-radius: 8px;
+}
+
+.waiter .unselect{
+  left: 300px;
+  background-color: rgba(255, 178, 15, 0.7);
+}
+
+.waiter .select {
+  left: 412px;
+  background-color: rgba(157, 253, 133, 0.5);
+}
+
+.waiter .reject {
+  left: 1153px;
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.waiter .reserve {
+  left: 1280px;
+  background-color: rgba(2, 214, 49, 1);
+}
+
+.waiter .selected {
+  left: 135px;
+  width: 160px;
+  background-color: rgba(255, 255, 255, 0.57);
+}
+
+/* Tambahkan gaya CSS untuk tabel dan baris yang dipilih */
+.waiter .table-container {
+  margin-top: 130px;
+}
+
+.waiter table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.waiter th, td {
+  border: none;
+  padding: 8px;
+  text-align: left;
+}
+
+.waiter th {
+  background-color: rgba(255, 178, 15, 0.7);
+}
+
+/* Gaya untuk kotak centang di kolom "Select" */
+.waiter .select-box {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.waiter .select-box.selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Gaya untuk dropdown status di kolom "Status" */
+.waiter .status-dropdown {
+  padding: 6px;
+  font-size: 14px;
+}
+
+.waiter .status-dropdown.selected {
+  background-color: #4caf50;
+  color: white;
 }

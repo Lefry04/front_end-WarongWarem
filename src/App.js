@@ -1,5 +1,5 @@
 import "./App.css";
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import FrontPage from './FrontPage';
 import LoginPageCust from "./LoginPageCust";
@@ -14,8 +14,21 @@ import Reservation  from "./Reservation";
 import TableRes1 from "./TableRes1";
 import ResReser1 from "./ResReser1";
 import Pay1 from "./Pay1";
+import History from "./History";
+import Waiter from "./Waiter";
 
 const App = () => {
+
+  useEffect(() => {
+    // Ganti judul halaman saat aplikasi dimulai
+    document.title = 'Aplikasi Saya';
+
+    // Fungsi cleanup (optional)
+    return () => {
+      document.title = 'Judul Halaman Asli';
+    };
+  }, []);
+
   return (
     <Router>
       <Routes>
@@ -32,6 +45,8 @@ const App = () => {
         <Route path="/tableres1" element={<TableRes1 />} />
         <Route path="/resreser1" element={<ResReser1 />} />
         <Route path="/pay1" element={<Pay1 />} />
+        <Route path="/history" element={<History />} />
+        <Route path="/waiter" element={<Waiter />} />
       </Routes>
     </Router>
   );
