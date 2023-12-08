@@ -1,5 +1,4 @@
 import "./App.css";
-import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import FrontPage from './FrontPage';
 import LoginPageCust from "./LoginPageCust";
@@ -17,21 +16,19 @@ import Pay1 from "./Pay1";
 import History from "./History";
 import Waiter from "./Waiter";
 import ContactUs from "./ContactUs";
+import Menu1 from "./Menu1";
+import Menu2 from "./Menu2";
+import ScrollToTop from "./ScrollToTop";
+import CreditDebit from "./CreditDebit";
+import ResultDebit from "./ResultDebit";
+import Cash from "./Cash";
+import ResultCash from "./ResultCash";
 
 const App = () => {
-
-  useEffect(() => {
-    // Ganti judul halaman saat aplikasi dimulai
-    document.title = 'Aplikasi Saya';
-
-    // Fungsi cleanup (optional)
-    return () => {
-      document.title = 'Judul Halaman Asli';
-    };
-  }, []);
-
+  
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<FrontPage />} />
         <Route path="/loginpagecust" element={<LoginPageCust />} />
@@ -49,6 +46,12 @@ const App = () => {
         <Route path="/history" element={<History />} />
         <Route path="/waiter" element={<Waiter />} />
         <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/menu1" element={<Menu1 />} />
+        <Route path="/menu2" element={<Menu2 />} />
+        <Route path="/creditdebit" element={<CreditDebit />} />
+        <Route path="/resultdebit" element={<ResultDebit />} />
+        <Route path="/cash" element={<Cash />} />
+        <Route path="/resultcash" element={<ResultCash />} />
       </Routes>
     </Router>
   );

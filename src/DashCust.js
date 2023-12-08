@@ -28,6 +28,10 @@ export const DashCust = () => {
     navigate("/history");
   };
 
+  const goToLoginPage = () => {
+    navigate('/loginpagecust')
+  };
+
   
   return (
     <div className="dash-cust">
@@ -38,7 +42,7 @@ export const DashCust = () => {
           <div className="rectangle" />
           <p className="text-wrapper">Hi, Welcome to Warung Warem!</p>
           <div className="div">Have you eaten?</div>
-          <img className="avatar" alt="Avatar" src="avatar 1.png" />
+          <img className="avatar" alt="Avatar" src="avatar 1.png" onClick={goToLoginPage}/>
           <div className="text-wrapper-2">{currentTime}</div>
           <div className="text-wrapper-3">{currentDate}</div>
           <button className="text-wrapper-4" onClick={goToReservation}>Reservation</button>

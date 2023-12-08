@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const TableRes1 = () => {
 
@@ -6,6 +7,12 @@ export const TableRes1 = () => {
 
     const handleTableChange = (event) => {
         setSelectedTable(event.target.value);
+    };
+
+    const navigate = useNavigate();
+
+    const goToMenu1 = () => {
+        navigate('/menu1')
     };
 
     return (
@@ -34,7 +41,7 @@ export const TableRes1 = () => {
                             <option value="Indoor">Indoor</option>
                             <option value="Outdoor">Outdoor</option>
                         </select>
-                        <button className="button">NEXT</button>
+                        <button className="button" onClick={goToMenu1}>NEXT</button>
                     </div>
                 </div>
             </div>
