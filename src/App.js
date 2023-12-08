@@ -16,6 +16,7 @@ import ResReser1 from "./ResReser1";
 import Pay1 from "./Pay1";
 import History from "./History";
 import Waiter from "./Waiter";
+import ContactUs from "./ContactUs";
 
 const App = () => {
 
@@ -47,6 +48,7 @@ const App = () => {
         <Route path="/pay1" element={<Pay1 />} />
         <Route path="/history" element={<History />} />
         <Route path="/waiter" element={<Waiter />} />
+        <Route path="/contactus" element={<ContactUs />} />
       </Routes>
     </Router>
   );
