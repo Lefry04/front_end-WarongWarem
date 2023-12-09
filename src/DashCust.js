@@ -24,8 +24,12 @@ export const DashCust = () => {
     navigate("/reservation");
   };
 
-  const goToPay1 = () => {
-    navigate("/pay1");
+  const goToHistory = () => {
+    navigate("/history");
+  };
+
+  const goToLoginPage = () => {
+    navigate('/loginpagecust')
   };
 
   
@@ -38,14 +42,14 @@ export const DashCust = () => {
           <div className="rectangle" />
           <p className="text-wrapper">Hi, Welcome to Warung Warem!</p>
           <div className="div">Have you eaten?</div>
-          <img className="avatar" alt="Avatar" src="avatar 1.png" />
+          <img className="avatar" alt="Avatar" src="avatar 1.png" onClick={goToLoginPage}/>
           <div className="text-wrapper-2">{currentTime}</div>
           <div className="text-wrapper-3">{currentDate}</div>
           <button className="text-wrapper-4" onClick={goToReservation}>Reservation</button>
           <div className="reservation"><img src="image 29.png" /></div>
-          <button className="history">History</button>
+          <button className="history" onClick={goToHistory}>History</button>
           <div className="history-icon"><img src="history.png"/></div>
-          <button className="feedback" onClick={goToPay1}>Feedback</button>
+          <button className="feedback">Feedback</button>
           <div className="feedback-icon"><img src="feedback.png"/></div>
         </div>
       </div>

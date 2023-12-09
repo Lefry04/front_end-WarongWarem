@@ -1,6 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export const ResReser1 = () =>{
+
+    const navigate = useNavigate();
+
+    const goToMenu1 = () => {
+        navigate('/menu1');
+    };
+
     return (
         <div className="resreser1">
             <div className="background">
@@ -15,6 +23,11 @@ export const ResReser1 = () =>{
                 <p className="c">Reservation Time</p>
                 <p className="d">Special Requests</p>
             </div>
+            <input placeholder="Please enter your name as the person making the reservation." className="a1"></input>
+            <input placeholder="Provide a contact number we can use for confirmation or additional information." className="b1"></input>
+            <input placeholder="Select the desired date for your table reservation." className="c1" type="datetime-local"></input>
+            <input placeholder="If there are any special requests, such as table preferences or dietary needs, inform us here." className="d1"></input>
+            <button onClick={goToMenu1}>NEXT</button>
             </div>
             </div>
             </div>

@@ -20,6 +20,9 @@ export const DashWai = () => {
 
   const navigate = useNavigate();
 
+  const goToWaiter = () => {
+    navigate('/waiter');
+  };
   
   return (
     <div className="dashwai">
@@ -31,7 +34,7 @@ export const DashWai = () => {
           <p className="text-wrapper">Hi, Welcome to Warung Warem!</p>
           <div className="text-wrapper-2">{currentTime}</div>
           <div className="text-wrapper-3">{currentDate}</div>
-          <button className="button">Dashboard</button>
+          <button className="button" onClick={goToWaiter}>Dashboard</button>
       </div>
       </div>
       </div>
