@@ -15,10 +15,6 @@ const goToAboutUsPage = () => {
     navigate('/aboutuspage');
 };
 
-const goToContactUsPage = () => {
-  navigate('/contactus');
-};
-
   return (
     <div className="frontpage">
       <div className="overlap-group-wrapper">
@@ -38,7 +34,7 @@ const goToContactUsPage = () => {
           <div className="line" />
           <div className="navbar">
           <a onClick={goToAboutUsPage}>About Us</a>
-          <a onClick={goToContactUsPage}>Contact Us</a>
+          <a href="#contact">Contact Us</a>
           <a onClick={goToLoginPage}>Login</a>
           </div>
         </div> 

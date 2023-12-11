@@ -31,7 +31,6 @@ export const DashCust = () => {
   const goToLoginPage = () => {
     navigate('/loginpagecust')
   };
-
   
   return (
     <div className="dash-cust">
