@@ -19,7 +19,6 @@ import Waiter from "./Waiter";
 import ContactUs from "./ContactUs";
 import Menu1 from "./Menu1";
 import Menu2 from "./Menu2";
-import ScrollToTop from "./ScrollToTop";
 import CreditDebit from "./CreditDebit";
 import ResultDebit from "./ResultDebit";
 import Cash from "./Cash";
