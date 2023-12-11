@@ -16,7 +16,7 @@ const goToAboutUsPage = () => {
 };
 
 const goToContactUsPage = () => {
-  navigate('/contactuspage');
+  navigate('/contactus');
 };
 
   return (
@@ -38,7 +38,7 @@ const goToContactUsPage = () => {
           <div className="line" />
           <div className="navbar">
           <a onClick={goToAboutUsPage}>About Us</a>
-          <a on onClick={goToContactUsPage}>Contact Us</a>
+          <a onClick={goToContactUsPage}>Contact Us</a>
           <a onClick={goToLoginPage}>Login</a>
           </div>
         </div> 

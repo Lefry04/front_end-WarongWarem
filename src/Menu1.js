@@ -5,8 +5,8 @@ export const Menu1 = () =>{
 
     const navigate = useNavigate();
 
-    const goToPay1 = () => {
-        navigate('/pay1')
+    const goToMenu2 = () => {
+        navigate('/menu2')
     };
 
     return (
@@ -21,7 +21,7 @@ export const Menu1 = () =>{
             <button className="paket2"><img src="Group1.png"></img></button>
             <button className="paket3"><img src="Group2.png"></img></button>
             <button className="paket4"><img src="Group3.png"></img></button>
-            <button className="buttonorder" onClick={goToPay1}>Add to Order</button>
+            <button className="buttonorder" onClick={goToMenu2}>Add to Order</button>
             <div className="p1">Package 1: Rp 500.000,00</div>
             <div className="p2">Package 2: Rp 250.000,00</div>
             <div className="p3">Package 3: Rp 200.000,00</div>
