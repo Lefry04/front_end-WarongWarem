@@ -35,9 +35,8 @@ export const DashMan = () => {
             <div className="text-wrapper-3">{currentDate}</div>
             <button className="a">Capacity Monitoring</button>
             <button className="b" onClick={goToReserReportDash}>Reservation Report</button>
-            <button className="c">Table Management</button>
-            <button className="d">Reservation History</button>
-            <button className="e">Big Reservation Approval</button>
+            <button className="c">Reservation History</button>
+            <button className="d">Big Reservation Approval</button>
           </div>
         </div>
       </div>

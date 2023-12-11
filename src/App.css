@@ -1340,11 +1340,6 @@
   background-color: rgba(255, 178, 15, 0.5);
 }
 
-.dashman .e {
-  top: 1518px;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
 .pay1 button {
   color: #ffffff;
   font-size: 40px;
@@ -2290,6 +2285,7 @@
   position: fixed;
   cursor: pointer;
 }
+
 .reportdaily {
   background-color: #000000;
   display: flex;
@@ -2363,7 +2359,7 @@
   font-family: "Poppins-Bold", Helvetica;
   font-size: 30px;
   font-weight: 700;
-  left: 1300px;
+  left: 1310px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
