@@ -39,58 +39,14 @@
 
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-// import Axios from "axios";
 
 export const SignUpPage = () => {
-  const [formData, setFormData] = useState({
-    username: "",
-    password: "",
-    confirmPassword: "",
-    profileName: "",
-  });
-  
-  const navigate = useNavigate();
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
+const goToLoginPageCust = () => {
+        navigate('/loginpagecust');
+    };
 
-  const handleSubmit = () => {
-    navigate('/loginpagecust')
-};
-
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-
-  //   // Validasi bahwa semua data telah terisi
-  //   if (!formData.username || !formData.password || !formData.confirmPassword || !formData.profileName) {
-  //     console.error("Please fill in all fields");
-  //     return;
-  //   }
-
-  //   // Validasi bahwa password dan konfirmasi password sama
-  //   if (formData.password !== formData.confirmPassword) {
-  //     console.error("Password and confirm password do not match");
-  //     return;
-  //   }
-
-  //   try {
-  //     const response = await Axios.post('http://localhost:8000/api/register', {
-  //       username: formData.username,
-  //       password: formData.password,
-  //       profile_name: formData.profileName,
-  //     });
-  //     console.log(response.data);
-
-  //     // Pindah ke halaman login hanya jika registrasi berhasil
-  //     navigate('/loginpagecust');
-  //   } catch (error) {
-  //     console.error(error.response.data);
-  //   }
-  // };
+const navigate = useNavigate();
 
   return (
     <div className="sign-up-page">
