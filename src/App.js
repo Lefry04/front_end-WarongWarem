@@ -26,6 +26,7 @@ import ResultCash from "./ResultCash";
 import ReserReportDash from "./ReserReportDash";
 import ReportDaily from "./ReportDaily";
 import ReportMonthly from "./ReportMonthly";
+import Monitoring from "./Monitoring";
 
 const App = () => {
   
@@ -58,6 +59,7 @@ const App = () => {
         <Route path="/resetreportdash" element={<ReserReportDash />} />
         <Route path="/reportdaily" element={<ReportDaily/>} />
         <Route path="/reportmonthly" element={<ReportMonthly/>} />
+        <Route path="/monitoring" element={<Monitoring />} /> 
       </Routes>
     </Router>
   );

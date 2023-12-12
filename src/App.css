@@ -211,7 +211,8 @@
   white-space: nowrap;
   margin: 83px;
   text-decoration: none;
-  cursor: pointer; /* baru */
+  cursor: pointer;
+  /* baru */
 }
 
 .navbar a:hover {
@@ -595,7 +596,8 @@
   width: 100%;
 }
 
-.sign-up-page input { /* baru */
+.sign-up-page input {
+  /* baru */
   text-indent: 10px;
 }
 
@@ -795,7 +797,8 @@
   width: 150px;
 }
 
-.sign-up-page .div-wrapper button { /* m */
+.sign-up-page .div-wrapper button {
+  /* m */
   background-size: 100% 100%;
   background-color: #FFB20F;
   border-radius: 300px;
@@ -1112,7 +1115,8 @@
   left: 114px;
   letter-spacing: 0;
   line-height: normal;
-  position: absolute; /* l */
+  position: absolute;
+  /* l */
   white-space: nowrap;
   width: 822px;
   height: 51px;
@@ -1123,7 +1127,8 @@
   text-indent: 10px;
 }
 
-.resreser1 input{ /* m */
+.resreser1 input {
+  /* m */
   background-color: transparent;
   color: #ffffff;
   background-color: transparent;
@@ -1142,7 +1147,7 @@
   text-indent: 10px;
 }
 
-.resreser1 input::placeholder{
+.resreser1 input::placeholder {
   color: #ffffff;
   text-indent: 10px;
 }
@@ -1168,7 +1173,8 @@
   position: absolute;
 }
 
-.tableres1 .b1, /* m */
+.tableres1 .b1,
+/* m */
 .resreser1 .b1 {
   top: 473px;
 }
@@ -1181,7 +1187,8 @@
 }
 
 .tableres1 .c1,
-.resreser1 .c1{ /* m */
+.resreser1 .c1 {
+  /* m */
   top: 626px;
 }
 
@@ -1193,7 +1200,8 @@
 }
 
 .tableres1 .d1,
-.resreser1 .d1 { /* m*/
+.resreser1 .d1 {
+  /* m*/
   top: 779px;
 }
 
@@ -1217,11 +1225,12 @@
   top: 1085px;
 }
 
-.tableres1 select{
+.tableres1 select {
   text-indent: 10px;
 }
 
-.tableres1 .button, /*m*/
+.tableres1 .button,
+/*m*/
 .resreser1 button {
   background-size: 100% 100%;
   background-color: #FFB20F;
@@ -1229,18 +1238,20 @@
   height: 41px;
   left: 400px;
   position: absolute;
-  width: 195px; /*l*/
+  width: 195px;
+  /*l*/
   color: #000000;
   font-family: "Inter-Bold", Helvetica;
   font-size: 20px;
   font-weight: 700;
 }
 
-.tableres1 button{ /*b*/
+.tableres1 button {
+  /*b*/
   top: 1200px;
 }
 
-.resreser1 button{
+.resreser1 button {
   top: 900px;
 }
 
@@ -1331,7 +1342,7 @@
   height: 390px;
 }
 
-.history .title{
+.history .title {
   font-size: 50px;
   font-weight: bold;
   color: #ffffff;
@@ -1358,18 +1369,18 @@
 
 .history .a,
 .history .b,
-.history .c{
+.history .c {
   left: 10px;
   position: absolute;
   color: #000000;
 }
 
-.history .a{
+.history .a {
   top: 0px;
   font-weight: bold;
 }
 
-.history .b{
+.history .b {
   top: 20px;
 }
 
@@ -1467,7 +1478,7 @@
   border-radius: 8px;
 }
 
-.waiter .unselect{
+.waiter .unselect {
   left: 300px;
   background-color: rgba(255, 178, 15, 0.7);
 }
@@ -1504,7 +1515,8 @@
   margin-top: 10px;
 }
 
-.waiter th, td {
+.waiter th,
+td {
   border: none;
   padding: 8px;
   text-align: left;
@@ -1600,7 +1612,7 @@
 }
 
 .menu1 .buttonorder {
-  background-color:rgba(255, 255, 255, 0.50);
+  background-color: rgba(255, 255, 255, 0.50);
   font-size: 20px;
   font-weight: bold;
   left: 415px;
@@ -1688,7 +1700,7 @@
   border-radius: 24px;
 }
 
-.menu2 .line1{
+.menu2 .line1 {
   color: #000000;
   background-color: #ffffff;
   height: 1px;
@@ -1698,7 +1710,7 @@
   width: 756px;
 }
 
-.menu2 .line2{
+.menu2 .line2 {
   color: #000000;
   background-color: #ffffff;
   height: 1px;
@@ -1708,7 +1720,7 @@
   width: 756px;
 }
 
-.menu2 .line3{
+.menu2 .line3 {
   color: #000000;
   background-color: #ffffff;
   height: 1px;
@@ -1718,7 +1730,7 @@
   width: 756px;
 }
 
-.menu2 .line4{
+.menu2 .line4 {
   color: #000000;
   background-color: #ffffff;
   height: 1px;
@@ -1728,7 +1740,7 @@
   width: 756px;
 }
 
-.menu2 .line5{
+.menu2 .line5 {
   color: #000000;
   background-color: #ffffff;
   height: 1px;
@@ -1774,7 +1786,7 @@
   text-indent: 250px;
 }
 
-.menu2 .text2{
+.menu2 .text2 {
   color: #ffffff;
   font-size: 20px;
   font-weight: 700px;
@@ -1823,7 +1835,7 @@
 }
 
 .menu2 .buttonpay {
-  background-color:rgba(255, 255, 255, 0.50);
+  background-color: rgba(255, 255, 255, 0.50);
   font-size: 20px;
   font-weight: bold;
   left: 415px;
@@ -2029,7 +2041,7 @@
   border: none;
 }
 
-.resultdebit .line2 span{
+.resultdebit .line2 span {
   color: #ffffff;
   position: relative;
   transform: translateY(-50%);
@@ -2091,7 +2103,8 @@
   height: 100px;
   border-radius: 24px;
   flex-shrink: 0;
-  background-color: rgba(255, 178, 15, 0.70);;
+  background-color: rgba(255, 178, 15, 0.70);
+  ;
 }
 
 .cash .title {
@@ -2196,7 +2209,7 @@
   border: none;
 }
 
-.resultcash .line2 span{
+.resultcash .line2 span {
   color: #ffffff;
   position: relative;
   transform: translateY(-50%);
@@ -2231,7 +2244,7 @@
   position: relative;
 }
 
-.reserreportdash .a{
+.reserreportdash .a {
   background-color: rgba(0, 0, 0, 0.50);
   width: 786px;
   height: 224px;
@@ -2243,7 +2256,7 @@
   position: absolute;
 }
 
-.reserreportdash .b{
+.reserreportdash .b {
   background-color: rgba(255, 178, 15, 0.50);
   width: 786px;
   height: 224px;
@@ -2255,7 +2268,7 @@
   position: absolute;
 }
 
-.reserreportdash .back{
+.reserreportdash .back {
   color: #ffffff;
   width: 190px;
   height: 40px;
@@ -2377,12 +2390,14 @@
   position: relative;
   max-height: 500px;
 }
+
 .reportdaily table {
   width: 100%;
   border-collapse: collapse;
 }
 
-.reportdaily th, td {
+.reportdaily th,
+td {
   border: none;
   padding: 15px;
   text-align: left;
@@ -2392,10 +2407,10 @@
   background-color: rgba(255, 178, 15, 1);
   position: sticky;
   top: 0;
-  z-index: 2; 
+  z-index: 2;
 }
 
-.reportdaily .back{
+.reportdaily .back {
   background-color: rgba(0, 0, 0, 0.5);
   color: #ffffff;
   top: 650px;
@@ -2410,7 +2425,7 @@
 
 .reservation .background {
   height: auto;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .reservation .button1 {
@@ -2447,6 +2462,216 @@
   border: none;
 }
 
+.monitoring .background .rectangle {
+  -webkit-backdrop-filter: blur(134.19px) brightness(100%);
+  backdrop-filter: blur(134.19px) brightness(100%);
+  background-color: #ffffff1a;
+  height: 1102px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.monitoring .blur {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 170px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.monitoring .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "Poppins-Bold", Helvetica;
+  font-size: 60px;
+  font-weight: 700;
+  left: 1235px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 20px;
+  width: 400px;
+}
+
+.monitoring .text-wrapper-3 {
+  color: #ffffff;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 30px;
+  font-weight: 400;
+  left: 1315px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 100px;
+}
+
+.monitoring .a {
+  color: #000000;
+  font-size: 27px;
+  font-weight: bold;
+  left: 100px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 25px;
+}
+
+.monitoring .b {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  left: 308px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 42px;
+}
+
+.monitoring .c {
+  color: #000000;
+  font-size: 21px;
+  left: 100px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 65px;
+}
+
+.monitoring .blurkuning {
+  background-color: rgba(255, 178, 15, 0.5);
+  height: 100px;
+  position: absolute;
+  top: 170px;
+  width: 100%;
+}
+
+.monitoring .d {
+  font-size: 45px;
+  font-weight: bold;
+  left: 20%;
+  letter-spacing: 0;
+  line-height: 19.2px;
+  position: absolute;
+  top: 165px;
+  color: #ffffff;
+}
+
+.monitoring .e {
+  font-size: 45px;
+  font-weight: bold;
+  left: 68%;
+  letter-spacing: 0;
+  line-height: 19.2px;
+  position: absolute;
+  top: 165px;
+  color: #ffffff;
+}
+
+.monitoring .line {
+  background-color: rgba(255, 255, 255, 1);
+  height: 1024px;
+  left: 50%;
+  position: absolute;
+  top: 270px;
+  width: 1px;
+}
+
+.monitoring .green1,
+.green2 {
+  background-color: #2CDD00;
+  border-radius: 100%;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 570px;
+}
+
+.monitoring .green1 {
+  left: 230px;
+}
+
+.monitoring .green2 {
+  left: 950px;
+}
+
+.monitoring .red1,
+.red2 {
+  background-color: #FF0000;
+  border-radius: 100%;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 650px;
+}
+
+.monitoring .red1 {
+  left: 230px;
+}
+
+.monitoring .red2 {
+  left: 950px;
+}
+
+.monitoring .f {
+  font-size: 20px;
+  font-weight: regular;
+  left: 20%;
+  letter-spacing: 0;
+  line-height: 19.2px;
+  position: absolute;
+  top: 560px;
+  color: #ffffff;
+}
+
+.monitoring .g {
+  font-size: 20px;
+  font-weight: regular;
+  left: 20%;
+  letter-spacing: 0;
+  line-height: 19.2px;
+  position: absolute;
+  top: 640px;
+  color: #ffffff;
+}
+
+.monitoring .h {
+  font-size: 20px;
+  font-weight: regular;
+  left: 68%;
+  letter-spacing: 0;
+  line-height: 19.2px;
+  position: absolute;
+  top: 560px;
+  color: #ffffff;
+}
+
+.monitoring .i {
+  font-size: 20px;
+  font-weight: regular;
+  left: 68%;
+  letter-spacing: 0;
+  line-height: 19.2px;
+  position: absolute;
+  top: 640px;
+  color: #ffffff;
+}
+
+.monitoring .j {
+  font-size: 25px;
+  font-weight: regular;
+  left: 85%;
+  letter-spacing: 0;
+  line-height: 19.2px;
+  position: absolute;
+  top: 1000px;
+  color: #000000;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s ease-in-out; /* Efek transisi pada perubahan warna */
+}
+
 /* ANIMATION, ANIMATION, AND ANIMATION!!! */
 
 /* ABOUT US PAGE */
@@ -2458,18 +2683,19 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 0.5;
   }
 }
 
 /* LOGIN PAGE CUST */
-.loginpagecust .div-wrapper{
-  transition: transform 0.3s ease-in-out; 
+.loginpagecust .div-wrapper {
+  transition: transform 0.3s ease-in-out;
 }
 
 .loginpagecust .div-wrapper:hover {
-  transform: scale(1.1);  
+  transform: scale(1.1);
 }
 
 .loginpagecust {
@@ -2481,6 +2707,7 @@
   from {
     transform: translateY(0px);
   }
+
   to {
     transform: translateY(0);
   }
@@ -2489,13 +2716,13 @@
 /* DASH CUST PAGE */
 .dash-cust .reservation,
 .dash-cust .history-icon,
-.dash-cust .feedback-icon, 
+.dash-cust .feedback-icon,
 .dash-cust .text-wrapper-4,
 .dash-cust .history,
 .dash-cust .feedback,
 .dash-cust .text-wrapper-5,
-.dash-cust .avatar{
-  transition: transform 0.3s ease-in-out; 
+.dash-cust .avatar {
+  transition: transform 0.3s ease-in-out;
 }
 
 .dash-cust .reservation:hover,
@@ -2506,7 +2733,7 @@
 .dash-cust .feedback:hover,
 .dash-cust .text-wrapper-5:hover,
 .dash-cust .avatar:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .dash-cust .text-wrapper {
@@ -2514,12 +2741,16 @@
 }
 
 @keyframes moveText {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateX(0%);
   }
+
   20% {
     transform: translateX(25%);
   }
+
   80% {
     transform: translateX(0%);
   }
@@ -2534,9 +2765,11 @@
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-20px);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -2544,22 +2777,22 @@
 
 .frontpage .text-wrapper {
   opacity: 0;
-  animation: fadeIn 3s forwards; 
+  animation: fadeIn 3s forwards;
 }
 
 @keyframes fadeIn {
   to {
-    opacity: 1; 
+    opacity: 1;
   }
 }
 
 .frontpage .img {
-  animation: rotateImage 5s linear infinite; 
+  animation: rotateImage 5s linear infinite;
 }
 
 @keyframes rotateImage {
   to {
-    transform: rotate(360deg); 
+    transform: rotate(360deg);
   }
 }
 
@@ -2577,37 +2810,37 @@
 
 /* TABLE RESERVATION PAGE */
 .tableres1 .button {
-  background-color: #ffae42; 
-  color: #ffffff; 
+  background-color: #ffae42;
+  color: #ffffff;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .tableres1 .button:hover {
-  background-color: #ffa200; 
-  transform: scale(1.05); 
+  background-color: #ffa200;
+  transform: scale(1.05);
 }
 
 .tableres1 .button:active {
-  background-color: #ff8c00; 
-  transform: scale(0.95); 
+  background-color: #ff8c00;
+  transform: scale(0.95);
 }
 
 /* PAYMENT1 PAGE */
 .pay1 .a,
 .pay1 .b {
   color: #ffffff;
-  transition: transform 0.2s ease; 
+  transition: transform 0.2s ease;
   cursor: pointer;
 }
 
 .pay1 .a:hover,
 .pay1 .b:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 .pay1 .a:active,
 .pay1 .b:active {
-  transform: scale(0.95); 
+  transform: scale(0.95);
 }
 
 /* CREDIT DEBIT PAGE */
@@ -2620,11 +2853,11 @@
 
 .resultdebit .line2:hover {
   color: #ffffff;
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 .resultdebit .line2:active {
-  transform: scale(0.95); 
+  transform: scale(0.95);
 }
 
 /* CASH PAGE */
@@ -2638,38 +2871,38 @@
 }
 
 .cash .three:active {
-  transform: scale(0.95); 
+  transform: scale(0.95);
 }
 
 /* CASH RESULT PAGE */
 .resultcash .line2:hover {
   color: #ffffff;
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 .resultcash .line2:active {
-  transform: scale(0.95); 
+  transform: scale(0.95);
 }
 
 /* HISTORY PAGE */
 .history .line2:hover {
   color: #ffffff;
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 .history .line2:active {
-  transform: scale(0.95); 
+  transform: scale(0.95);
 }
 
 /* DASHWAI PAGE */
 .dashwai .text-wrapper,
 .dashwai .button {
-  transition: transform 0.3s ease-in-out; 
+  transition: transform 0.3s ease-in-out;
 }
 
 .dashwai .text-wrapper:hover,
 .dashwai .button:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .dashwai .text-wrapper {
@@ -2677,12 +2910,16 @@
 }
 
 @keyframes moveText {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateX(0%);
   }
+
   20% {
     transform: translateX(25%);
   }
+
   80% {
     transform: translateX(0%);
   }
@@ -2694,7 +2931,7 @@
 .dashman .b,
 .dashman .c,
 .dashman .d {
-  transition: transform 0.3s ease-in-out; 
+  transition: transform 0.3s ease-in-out;
 }
 
 .dashman .text-wrapper:hover,
@@ -2702,7 +2939,7 @@
 .dashman .b:hover,
 .dashman .c:hover,
 .dashman .d:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .dashman .text-wrapper {
@@ -2710,12 +2947,16 @@
 }
 
 @keyframes moveText {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateX(0%);
   }
+
   20% {
     transform: translateX(25%);
   }
+
   80% {
     transform: translateX(0%);
   }
@@ -2725,20 +2966,20 @@
 .reserreportdash .a,
 .reserreportdash .b,
 .reserreportdash .back {
-  transition: transform 0.3s ease-in-out; 
+  transition: transform 0.3s ease-in-out;
 }
 
 .reserreportdash .a:hover,
 .reserreportdash .b:hover,
 .reserreportdash .back:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 /* REPORT DAILY & MONTHLY */
 .reportdaily .back {
-  transition: transform 0.3s ease-in-out; 
+  transition: transform 0.3s ease-in-out;
 }
 
 .reportdaily .back:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }

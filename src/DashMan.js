@@ -23,6 +23,10 @@ export const DashMan = () => {
     navigate('/resetreportdash');
   };
 
+  const goToCapacityMonitoring = ()=>{
+    navigate('/monitoring');
+  };
+
   return (
     <div className="dashman">
       <div className="background" >
@@ -33,7 +37,7 @@ export const DashMan = () => {
             <p className="text-wrapper">Hi, Welcome to Warung Warem!</p>
             <div className="text-wrapper-2">{currentTime}</div>
             <div className="text-wrapper-3">{currentDate}</div>
-            <button className="a">Capacity Monitoring</button>
+            <button className="a" onClick={goToCapacityMonitoring}>Capacity Monitoring</button>
             <button className="b" onClick={goToReserReportDash}>Reservation Report</button>
             <button className="c">Reservation History</button>
             <button className="d">Big Reservation Approval</button>
