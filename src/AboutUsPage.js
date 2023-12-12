@@ -13,9 +13,9 @@ export const AboutUsPage = () => {
           </div>
           <div className="text-wrapper">About Us</div>
           <div className="text-wrapper-2">Warung Warem Since 2023</div>
-          <div className="union"/>
-          <div className="group"/>
-          <div className="img"/>
+          <div className="union" />
+          <div className="group" />
+          <div className="img" />
           <p className="welcome-to-warung">
             Welcome to <br />
             Warung Warem, a culinary destination that combines authentic flavors with a warm and friendly atmosphere.
