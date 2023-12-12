@@ -11,7 +11,7 @@ export const AboutUsPage = () => {
               <div className="div" />
             </div>
           </div>
-          <div className="text-wrapper">About Us</div>
+          <div className="text-wrapper">ABOUT US</div>
           <div className="text-wrapper-2">Warung Warem Since 2023</div>
           <div className="union" />
           <div className="group" />
