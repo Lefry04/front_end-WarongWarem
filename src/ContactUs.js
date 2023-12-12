@@ -4,7 +4,7 @@ import "./ContactUs.css";
 export const ContactUs = () => {
   return (
     <div className="contact-us">
-      <div className="overlap-wrapper">
+      <div className="overlap-wrapper">conta
         <div className="overlap">
           <div className="background-gradient">
             <div className="overlap-group">
@@ -13,11 +13,11 @@ export const ContactUs = () => {
               <div className="ellipse-2" />
             </div>
           </div>
-          <img className="latar1" src="background-a.png"/>
-          <img className="latar2" src="background-b.png"/>
-          <img className="latar3" src="background-c.png"/>
-          <img className="latar4" src="background-d.png"/>
-          <div className="text-wrapper">Contact Us</div>
+          <img className="latar1" src="background-a.png" />
+          <img className="latar2" src="background-b.png" />
+          <img className="latar3" src="background-c.png" />
+          <img className="latar4" src="background-d.png" />
+          <div className="text-wrapper">CONTACT US</div>
           <div className="text-wrapper-2">Warung Warem Since 2023</div>
           <p className="p">
             We’re very approachable and would like to speak to you. feel free to call, send us an email us or simply

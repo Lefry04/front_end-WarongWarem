@@ -4,11 +4,12 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    height: 1080px;
 }
   
 .contact-us .overlap-wrapper {
     background-color: #e9a410bc;
-    height: 1024px;
+    height: 1080px;
     width: 1440px;
 }
   
@@ -77,9 +78,9 @@
 .contact-us .text-wrapper {
     color: #ffffff;
     font-family: "Kadwa-Bold", Helvetica;
-    font-size: 48px;
+    font-size: 60px;
     font-weight: 700;
-    left: 550px;
+    left: 510px;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
@@ -93,13 +94,12 @@
     font-family: "Inter-Medium", Helvetica;
     font-size: 26px;
     font-weight: 450px;
-    left: 500px;
+    left: 547px;
     letter-spacing: 0px;
     line-height: 100px;
-
     position: absolute;
     text-align: center;
-    top: 149px;
+    top: 130px;
     white-space: nowrap;
 }
   
@@ -151,9 +151,9 @@
 .contact-us .text-wrapper-3 {
     color: #ffffff;
     font-family: "Inter-Bold", Helvetica;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 700;
-    left: 860px;
+    left: 880px;
     letter-spacing: 0;
     line-height: 64px;
     position: absolute;
@@ -163,7 +163,7 @@
   
 .contact-us .whatsapp-image {
     height: 56px;
-    left: 800px;
+    left: 830px;
     object-fit: cover;
     position: absolute;
     top: 843px;
@@ -182,9 +182,9 @@
 .contact-us .text-wrapper-4 {
     color: #ffffff;
     font-family: "Inter-Bold", Helvetica;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 700;
-    left: 860px;
+    left: 880px;
     letter-spacing: 0;
     line-height: 64px;
     position: absolute;
@@ -229,11 +229,11 @@
     font-family: "Calibri-Regular", Helvetica;
     font-size: 20px;
     font-weight: 400;
-    left: 825px;
+    left: 820px;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
-    top: 479px;
+    top: 470px;
     width: 435px;
 }
   
@@ -257,7 +257,7 @@
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
-    top: 560px;
+    top: 565px;
     width: 435px;
 }
 
@@ -301,20 +301,20 @@
 } 
 
 button {
+  font-family: "Calibri-Regular", Helvetica;
   height: 54px;
   left: 915px;
   position: absolute;
-  top: 723px;
+  top: 730px;
   width: 195px;
   border-radius: 24px;
   background-color: #00000095;
   color: #ffffff;
+  border: none;
 }
- 
-
 
 .latar1 {
-  height: 784px;
+  height: 840px;
   left: 140px;
   position: absolute;
   top: 240px;
@@ -339,7 +339,7 @@ button {
 }
 
 .latar4 {
-   height: 450px;
+   height: 468px;
    left: 790px;
    position: absolute;
    top: 330px;
@@ -349,15 +349,15 @@ button {
 .kotak {
     height: 56px;
     width: 56px;
-    left: 800px;
+    left: 815px;
     top: 843px;
     position: absolute;
 }
 
 .telfon {
-    height: 56px;
-    width: 56px;
-    left: 800px;
+    height: 60px;
+    width: 60px;
+    left: 814px;
     top: 913px;
     position: absolute;  
 }

@@ -482,13 +482,13 @@
 .about-us-page .text-wrapper {
   color: #ffffff;
   font-family: "Kadwa-Bold", Helvetica;
-  font-size: 48px;
+  font-size: 60px;
   font-weight: 700;
-  left: 603px;
+  left: 545px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 59px;
+  top: 70px;
   white-space: nowrap;
   width: 277px;
 }
@@ -496,9 +496,9 @@
 .about-us-page .text-wrapper-2 {
   color: #ffffff;
   font-family: "Inter-Medium", Helvetica;
-  font-size: 26px;
+  font-size: 23px;
   font-weight: 500;
-  left: 542px;
+  left: 558px;
   letter-spacing: 0;
   line-height: 44px;
   position: absolute;
@@ -862,8 +862,9 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  height: 2048px;
+  height: 1800px;
   position: relative;
+  border: none;
 }
 
 .dash-cust .text-wrapper,
@@ -949,6 +950,7 @@
 
 .dash-cust .reservation {
   color: #ffffff;
+  border: none;
   background-color: rgba(255, 178, 15, 0.5);
   font-family: "Inter-Bold", Helvetica;
   font-size: 50px;
@@ -981,6 +983,7 @@
   width: 526px;
   height: 248px;
   border-radius: 24px;
+  border: none;
 }
 
 .dash-cust .history-icon {
@@ -1017,6 +1020,7 @@
   width: 526px;
   height: 248px;
   border-radius: 24px;
+  border: none;
 }
 
 .dash-cust .feedback-icon {
@@ -1037,42 +1041,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.reservation .background {
-  height: 1024px;
-}
-
-.reservation .button1 {
-  color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-family: "Inter-Bold", Helvetica;
-  font-size: 50px;
-  font-weight: bolder;
-  left: 163px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 312px;
-  width: 330px;
-  height: 400px;
-  border-radius: 24px;
-}
-
-.reservation .button2 {
-  color: #ffffff;
-  background-color: rgba(255, 178, 15, 0.5);
-  font-family: "Inter-Bold", Helvetica;
-  font-size: 50px;
-  font-weight: bolder;
-  left: 580px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 312px;
-  width: 330px;
-  height: 400px;
-  border-radius: 24px;
 }
 
 .tableres1 {
@@ -1291,7 +1259,7 @@
   font-size: 40px;
   font-weight: 700;
   background-color: rgba(0, 0, 0, 0.5);
-  left: 120px;
+  left: 124px;
   top: 718px;
   width: 810px;
   height: 122px;
@@ -1313,7 +1281,7 @@
   color: #ffffff;
   font-size: 40px;
   font-weight: 700;
-  left: 120px;
+  left: 124px;
   width: 810px;
   height: 122px;
   position: absolute;
@@ -1362,7 +1330,7 @@
   width: 320px;
   height: 390px;
 }
-/*b*/
+
 .history .title{
   font-size: 50px;
   font-weight: bold;
@@ -1370,7 +1338,7 @@
   background-color: rgba(255, 178, 15, 0.75);
   position: absolute;
   width: 826px;
-  height: auto;
+  height: 83px;
   top: 100px;
   left: 105px;
   text-align: center;
@@ -1382,7 +1350,8 @@
   width: 826px;
   height: 80px;
   left: 105px;
-  top: 300px;
+  top: 210px;
+  border: none;
   border-radius: 24px;
   background-color: rgba(255, 255, 255, 0.85);
 }
@@ -1402,6 +1371,19 @@
 
 .history .b{
   top: 20px;
+}
+
+.history .line2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  width: 423px;
+  height: 68px;
+  left: 210px;
+  top: 275px;
+  border-radius: 24px;
+  position: absolute;
+  text-align: center;
+  border: none;
 }
 
 .waiter .text-wrapper-2 {
@@ -2009,6 +1991,7 @@
   position: absolute;
   top: 697px;
   width: 135px;
+  cursor: pointer;
 }
 
 
@@ -2253,7 +2236,7 @@
   width: 786px;
   height: 224px;
   left: 124px;
-  top: 96px;
+  top: 106px;
   border: none;
   font-size: 40px;
   font-weight: bold;
@@ -2265,7 +2248,7 @@
   width: 786px;
   height: 224px;
   left: 124px;
-  top: 400px;
+  top: 410px;
   border: none;
   font-size: 40px;
   font-weight: bold;
@@ -2424,10 +2407,50 @@
   font-weight: bold;
 }
 
-/* ANIMATION */
 
+.reservation .background {
+  height: auto;
+  overflow: hidden; 
+}
+
+.reservation .button1 {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 50px;
+  font-weight: bolder;
+  left: 163px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 312px;
+  width: 330px;
+  height: 400px;
+  border-radius: 24px;
+  border: none;
+}
+
+.reservation .button2 {
+  color: #ffffff;
+  background-color: rgba(255, 178, 15, 0.5);
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 50px;
+  font-weight: bolder;
+  left: 580px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 312px;
+  width: 330px;
+  height: 400px;
+  border-radius: 24px;
+  border: none;
+}
+
+/* ANIMATION, ANIMATION, AND ANIMATION!!! */
+
+/* ABOUT US PAGE */
 .about-us-page {
-  /* Tambahkan properti animasi di sini */
   animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -2436,13 +2459,22 @@
     opacity: 0;
   }
   to {
-    opacity: 1;
+    opacity: 0.5;
   }
+}
+
+/* LOGIN PAGE CUST */
+.loginpagecust .div-wrapper{
+  transition: transform 0.3s ease-in-out; 
+}
+
+.loginpagecust .div-wrapper:hover {
+  transform: scale(1.1);  
 }
 
 .loginpagecust {
   transform: translateY(0px);
-  animation: fadeIn 1.5s ease-in-out forwards;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
@@ -2452,4 +2484,261 @@
   to {
     transform: translateY(0);
   }
+}
+
+/* DASH CUST PAGE */
+.dash-cust .reservation,
+.dash-cust .history-icon,
+.dash-cust .feedback-icon, 
+.dash-cust .text-wrapper-4,
+.dash-cust .history,
+.dash-cust .feedback,
+.dash-cust .text-wrapper-5,
+.dash-cust .avatar{
+  transition: transform 0.3s ease-in-out; 
+}
+
+.dash-cust .reservation:hover,
+.dash-cust .history-icon:hover,
+.dash-cust .feedback-icon:hover,
+.dash-cust .text-wrapper-4:hover,
+.dash-cust .history:hover,
+.dash-cust .feedback:hover,
+.dash-cust .text-wrapper-5:hover,
+.dash-cust .avatar:hover {
+  transform: scale(1.1); 
+}
+
+.dash-cust .text-wrapper {
+  animation: moveText 15s linear infinite;
+}
+
+@keyframes moveText {
+  0%, 100% {
+    transform: translateX(0%);
+  }
+  20% {
+    transform: translateX(25%);
+  }
+  80% {
+    transform: translateX(0%);
+  }
+}
+
+/* FRONT PAGE */
+.frontpage .EAT-TO-BE-HEALTHY {
+  animation: moveText 4s infinite;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.frontpage .text-wrapper {
+  opacity: 0;
+  animation: fadeIn 3s forwards; 
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1; 
+  }
+}
+
+.frontpage .img {
+  animation: rotateImage 5s linear infinite; 
+}
+
+@keyframes rotateImage {
+  to {
+    transform: rotate(360deg); 
+  }
+}
+
+/* RESERVATION PAGE */
+
+.reservation .button1,
+.reservation .button2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.reservation .button1:active,
+.reservation .button2:active {
+  transform: scale(0.95);
+}
+
+/* TABLE RESERVATION PAGE */
+.tableres1 .button {
+  background-color: #ffae42; 
+  color: #ffffff; 
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.tableres1 .button:hover {
+  background-color: #ffa200; 
+  transform: scale(1.05); 
+}
+
+.tableres1 .button:active {
+  background-color: #ff8c00; 
+  transform: scale(0.95); 
+}
+
+/* PAYMENT1 PAGE */
+.pay1 .a,
+.pay1 .b {
+  color: #ffffff;
+  transition: transform 0.2s ease; 
+  cursor: pointer;
+}
+
+.pay1 .a:hover,
+.pay1 .b:hover {
+  transform: scale(1.05); 
+}
+
+.pay1 .a:active,
+.pay1 .b:active {
+  transform: scale(0.95); 
+}
+
+/* CREDIT DEBIT PAGE */
+.creditdebit .text5:hover,
+.creditdebit .text5:active {
+  text-decoration: underline;
+}
+
+/* CREDIT DEBIT RESULT PAGE*/
+
+.resultdebit .line2:hover {
+  color: #ffffff;
+  transform: scale(1.05); 
+}
+
+.resultdebit .line2:active {
+  transform: scale(0.95); 
+}
+
+/* CASH PAGE */
+.cash .three {
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.cash .three:hover {
+  transform: scale(1.05);
+}
+
+.cash .three:active {
+  transform: scale(0.95); 
+}
+
+/* CASH RESULT PAGE */
+.resultcash .line2:hover {
+  color: #ffffff;
+  transform: scale(1.05); 
+}
+
+.resultcash .line2:active {
+  transform: scale(0.95); 
+}
+
+/* HISTORY PAGE */
+.history .line2:hover {
+  color: #ffffff;
+  transform: scale(1.05); 
+}
+
+.history .line2:active {
+  transform: scale(0.95); 
+}
+
+/* DASHWAI PAGE */
+.dashwai .text-wrapper,
+.dashwai .button {
+  transition: transform 0.3s ease-in-out; 
+}
+
+.dashwai .text-wrapper:hover,
+.dashwai .button:hover {
+  transform: scale(1.1); 
+}
+
+.dashwai .text-wrapper {
+  animation: moveText 15s linear infinite;
+}
+
+@keyframes moveText {
+  0%, 100% {
+    transform: translateX(0%);
+  }
+  20% {
+    transform: translateX(25%);
+  }
+  80% {
+    transform: translateX(0%);
+  }
+}
+
+/* DASHMAN PAGE */
+.dashman .text-wrapper,
+.dashman .a,
+.dashman .b,
+.dashman .c,
+.dashman .d {
+  transition: transform 0.3s ease-in-out; 
+}
+
+.dashman .text-wrapper:hover,
+.dashman .a:hover,
+.dashman .b:hover,
+.dashman .c:hover,
+.dashman .d:hover {
+  transform: scale(1.1); 
+}
+
+.dashman .text-wrapper {
+  animation: moveText 15s linear infinite;
+}
+
+@keyframes moveText {
+  0%, 100% {
+    transform: translateX(0%);
+  }
+  20% {
+    transform: translateX(25%);
+  }
+  80% {
+    transform: translateX(0%);
+  }
+}
+
+/* RESERREPORTDASH PAGE*/
+.reserreportdash .a,
+.reserreportdash .b,
+.reserreportdash .back {
+  transition: transform 0.3s ease-in-out; 
+}
+
+.reserreportdash .a:hover,
+.reserreportdash .b:hover,
+.reserreportdash .back:hover {
+  transform: scale(1.1); 
+}
+
+/* REPORT DAILY & MONTHLY */
+.reportdaily .back {
+  transition: transform 0.3s ease-in-out; 
+}
+
+.reportdaily .back:hover {
+  transform: scale(1.1); 
 }
