@@ -249,7 +249,7 @@
 
 .loginpagecust .overlap {
   height: 718px;
-  left: 21px;
+  left: 11px;
   position: absolute;
   top: -202px;
   width: 1101px;
@@ -260,7 +260,7 @@
   border-radius: 402.75px/347.6px;
   filter: blur(299.69px);
   height: 695px;
-  left: 296px;
+  left: 286px;
   position: absolute;
   top: 0;
   width: 805px;
@@ -289,7 +289,7 @@
 
 .loginpagecust .text-wrapper {
   top: 620px;
-  left: 649px;
+  left: 639px;
 }
 
 .loginpagecust .rectangle::placeholder,
@@ -307,7 +307,7 @@
   border-color: #ffffffbf;
   border-radius: 30px;
   height: 47px;
-  left: 505px;
+  left: 495px;
   position: absolute;
   top: 607px;
   width: 376px;
@@ -321,7 +321,7 @@
 
 .loginpagecust .text-wrapper-2 {
   top: 684px;
-  left: 649px;
+  left: 639px;
 }
 
 .loginpagecust .rectangle-2 {
@@ -330,7 +330,7 @@
   color: #ffffff;
   border-radius: 30px;
   height: 47px;
-  left: 505px;
+  left: 495px;
   position: absolute;
   top: 671px;
   width: 376px;
@@ -343,7 +343,7 @@
   font-family: "Kadwa-Bold", Helvetica;
   font-size: 48px;
   font-weight: 700;
-  left: 610px;
+  left: 607px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
@@ -354,7 +354,7 @@
 
 .loginpagecust .overlap-group {
   height: 70px;
-  left: 595px;
+  left: 585px;
   position: absolute;
   top: 625px;
   width: 497px;
@@ -364,7 +364,7 @@
   color: red;
   font-size: 16px;
   margin-top: 0px;
-  left: 20px;
+  left: 10px;
   position: absolute;
 }
 
@@ -386,7 +386,7 @@
   font-family: "Kadwa-Bold", Helvetica;
   font-size: 32px;
   font-weight: 700;
-  left: 58px;
+  left: 55px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
@@ -400,7 +400,7 @@
   background-color: #FFB20F;
   border-radius: 300px;
   height: 41px;
-  left: 615px;
+  left: 605px;
   position: absolute;
   top: 570px;
   width: 195px;
@@ -434,7 +434,7 @@
   background-color: #FFB20F;
   opacity: 0.5;
   height: 784px;
-  left: 140px;
+  left: 120px;
   position: absolute;
   top: 240px;
   width: 1180px;
@@ -443,7 +443,7 @@
 
 .about-us-page .overlap-group {
   height: 695px;
-  left: 21px;
+  left: 1px;
   position: relative;
   top: -202px;
   width: 1101px;
@@ -454,7 +454,7 @@
   border-radius: 402.75px/347.6px;
   filter: blur(299.69px);
   height: 695px;
-  left: 296px;
+  left: 276px;
   position: absolute;
   top: 0;
   width: 805px;
@@ -473,7 +473,7 @@
 
 .about-us-page .rectangle {
   height: 784px;
-  left: 140px;
+  left: 120px;
   position: absolute;
   top: 240px;
   width: 1180px;
@@ -484,7 +484,7 @@
   font-family: "Kadwa-Bold", Helvetica;
   font-size: 48px;
   font-weight: 700;
-  left: 623px;
+  left: 603px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
@@ -498,7 +498,7 @@
   font-family: "Inter-Medium", Helvetica;
   font-size: 26px;
   font-weight: 500;
-  left: 562px;
+  left: 542px;
   letter-spacing: 0;
   line-height: 44px;
   position: absolute;
@@ -509,7 +509,7 @@
 
 .about-us-page .union {
   height: 640px;
-  left: 230px;
+  left: 210px;
   position: absolute;
   top: 330px;
   width: 490px;
@@ -520,7 +520,7 @@
 
 .about-us-page .group {
   height: 372px;
-  left: 764px;
+  left: 744px;
   position: absolute;
   top: 330px;
   width: 466px;
@@ -531,7 +531,7 @@
 
 .about-us-page .img {
   height: 250px;
-  left: 764px;
+  left: 744px;
   position: absolute;
   top: 720px;
   width: 466px;
@@ -553,7 +553,7 @@
   font-family: "Inter-Bold", Helvetica;
   font-size: 30px;
   font-weight: 700;
-  left: 260px;
+  left: 240px;
   letter-spacing: 0;
   line-height: 50px;
   position: absolute;
@@ -566,7 +566,7 @@
   font-family: "Inter-Bold", Helvetica;
   font-size: 30px;
   font-weight: 700;
-  left: 806px;
+  left: 786px;
   letter-spacing: 0;
   line-height: 35px;
   position: absolute;
@@ -579,7 +579,7 @@
   font-family: "Inter-Bold", Helvetica;
   font-size: 30px;
   font-weight: 700;
-  left: 806px;
+  left: 786px;
   letter-spacing: 0;
   line-height: 35px;
   position: absolute;
@@ -2422,4 +2422,34 @@
   border: none;
   font-size: 20px;
   font-weight: bold;
+}
+
+/* ANIMATION */
+
+.about-us-page {
+  /* Tambahkan properti animasi di sini */
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.loginpagecust {
+  transform: translateY(0px);
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }

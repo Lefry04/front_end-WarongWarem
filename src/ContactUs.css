@@ -361,3 +361,21 @@ button {
     top: 913px;
     position: absolute;  
 }
+
+.contact-us {
+  background-color: #e9a410f6;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  animation: fadeIn 1.5s ease-in-out; 
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
