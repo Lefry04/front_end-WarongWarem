@@ -1362,8 +1362,25 @@
   left: 105px;
   top: 270px;
   border: none;
+  margin-bottom: 20px;
   border-radius: 24px;
-  background-color: rgba(157, 253, 133, 0.50);
+}
+
+/* Styles for different statuses */
+.history button.active {
+  background-color: rgba(157, 253, 133, 0.5);
+}
+
+.history button.waiting {
+  background-color: rgba(255, 178, 15, 0.5);
+}
+
+.history button.inactive {
+  background-color: rgba(255, 0, 0, 0.5); 
+}
+
+.history button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .history .a,
@@ -1403,16 +1420,20 @@
 }
 
 .history .line2 {
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 20px;
-  width: 423px;
-  height: 68px;
-  left: 210px;
-  top: 275px;
-  border-radius: 24px;
-  position: absolute;
+  display: inline-block;
+  background-color: #000000;
+  /* Green background color, adjust as needed */
+  color: white;
+  padding: 10px 15px;
   text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
   border: none;
+  border-radius: 24px;
+  height: 60px;
+  margin-top: 10px;
+  /* Adjust margin as needed */
 }
 
 .history .h {
@@ -2753,7 +2774,8 @@ td {
   color: #000000;
   cursor: pointer;
   text-decoration: underline;
-  transition: color 0.3s ease-in-out; /* Efek transisi pada perubahan warna */
+  transition: color 0.3s ease-in-out;
+  /* Efek transisi pada perubahan warna */
 }
 
 .manhisto .rectangle {
@@ -2825,7 +2847,7 @@ td {
   font-size: 19px;
   left: 160px;
   top: 235px;
-} 
+}
 
 .manhisto .list {
   top: 295px;
@@ -2851,7 +2873,8 @@ td {
 }
 
 .manhisto .list li .left {
-  width: 150px; /* Menyesuaikan lebar div untuk data */
+  width: 150px;
+  /* Menyesuaikan lebar div untuk data */
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   height: auto;
@@ -2872,11 +2895,13 @@ td {
 
   /* Atur warna sesuai kondisi status */
   &.reserved {
-    color: #4caf50; /* Hijau untuk Reserved */
+    color: #4caf50;
+    /* Hijau untuk Reserved */
   }
 
   &.cancelled {
-    color: #ff0000; /* Merah untuk Cancelled */
+    color: #ff0000;
+    /* Merah untuk Cancelled */
   }
 }
 
