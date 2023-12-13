@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-export const Waiter = () => {
+export const BigReser = () => {
 
     const [currentTime, setCurrentTime] = useState("");
     const [currentDate, setCurrentDate] = useState("");
@@ -155,4 +155,4 @@ export const Waiter = () => {
     )
 }
 
-export default Waiter;
+export default BigReser;

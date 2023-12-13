@@ -1,12 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useReservationContext } from "./ReservationContext";
+import axios from "axios";
 
-export const CreditDebit = () => {
+const CreditDebit = () => {
+    const { reservationData, updateReservationData } = useReservationContext();
+    const [errors, setErrors] = useState({});
     const navigate = useNavigate();
 
-    const goToresultdebit=()=>{
-        navigate('/resultdebit');
+    const handleSubmit = async () => {
+        try {
+            // Validasi formulir jika diperlukan
+            const response = await axios.post("http://localhost:8000/api/reservations-warongwarem", reservationData);
+
+            // Handle response dari backend sesuai kebutuhan
+
+            navigate('/resultdebit');
+        } catch (error) {
+            // Handle error dari backend
+            if (error.response) {
+                setErrors(error.response.data.errors);
+            } else {
+                console.error("Error:", error.message);
+            }
+        }
     };
+
     return (
         <div className="creditdebit">
             <div className="background">
@@ -26,7 +45,7 @@ export const CreditDebit = () => {
                         <div className="line4" />
                         <p className="text3">Rp. 50.000,00</p>
                         <p className="text4">View detailed bill</p>
-                        <p className="text5" onClick={goToresultdebit}>Proceed to Pay</p>
+                        <p className="text5" onClick={handleSubmit}>Proceed to Pay</p>
                     </div>
                 </div>
             </div>

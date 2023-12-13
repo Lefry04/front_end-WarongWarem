@@ -90,6 +90,7 @@
   cursor: pointer;
   outline: none;
 }
+
 .frontpage {
   background-color: #ffb20fbf;
   display: flex;
@@ -2240,4 +2241,139 @@
   left: 275px;
   top: 185px;
   position: absolute;
+}
+
+.manhisto .rectangle {
+  -webkit-backdrop-filter: blur(134.19px) brightness(100%);
+  backdrop-filter: blur(134.19px) brightness(100%);
+  background-color: #ffffff1a;
+  height: 1102px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.manhisto .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "Poppins-Bold", Helvetica;
+  font-size: 60px;
+  font-weight: 700;
+  left: 135px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 80px;
+  width: 400px;
+}
+
+.manhisto .text-wrapper-3 {
+  color: #ffffff;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 30px;
+  font-weight: 400;
+  left: 1330px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 100px;
+}
+
+.manhisto .blur {
+  background-color: rgba(247, 250, 255, 0.9);
+  position: absolute;
+  width: 1327px;
+  height: 95px;
+  left: 135px;
+  top: 200px;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.manhisto .a {
+  position: absolute;
+  color: #000000;
+  font-weight: bold;
+  font-size: 26px;
+  left: 160px;
+  top: 195px;
+}
+
+.manhisto .b {
+  position: absolute;
+  color: #000000;
+  font-size: 17px;
+  left: 350px;
+  top: 210px;
+}
+
+.manhisto .c {
+  position: absolute;
+  color: #000000;
+  font-size: 19px;
+  left: 160px;
+  top: 235px;
+} 
+
+.manhisto .list {
+  top: 295px;
+  background-color: rgba(255, 178, 15, 0.14);
+  left: 135px;
+  position: absolute;
+  width: 1327px;
+  overflow-y: auto;
+  max-height: 582px;
+}
+
+.manhisto .list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.manhisto .list li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.manhisto .list li .left {
+  width: 150px; /* Menyesuaikan lebar div untuk data */
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  height: auto;
+  text-align: center;
+  margin-left: 30px;
+}
+
+.manhisto .list li p {
+  margin: 0;
+}
+
+.manhisto .title {
+  color: #ffffff;
+}
+
+.manhisto .list li p.status {
+  margin: 0;
+
+  /* Atur warna sesuai kondisi status */
+  &.reserved {
+    color: #4caf50; /* Hijau untuk Reserved */
+  }
+
+  &.cancelled {
+    color: #ff0000; /* Merah untuk Cancelled */
+  }
+}
+
+.manhisto .list li .right {
+  text-align: right;
+  width: 250px;
+  color: #ffffff;
+}
+
+.manhisto .right p {
+  text-align: left;
+  color: #ffffff;
 }

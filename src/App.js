@@ -1,5 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { ReservationProvider } from "./ReservationContext";
 import FrontPage from './FrontPage';
 import LoginPageCust from "./LoginPageCust";
 import AboutUsPage from "./AboutUsPage";
@@ -23,12 +24,15 @@ import CreditDebit from "./CreditDebit";
 import ResultDebit from "./ResultDebit";
 import Cash from "./Cash";
 import ResultCash from "./ResultCash";
+import ManHisto from "./ManHisto";
+import BigReser from "./BigReser";
 
 const App = () => {
   
   return (
     <Router>
       <ScrollToTop />
+      <ReservationProvider>
       <Routes>
         <Route path="/" element={<FrontPage />} />
         <Route path="/loginpagecust" element={<LoginPageCust />} />
@@ -52,7 +56,10 @@ const App = () => {
         <Route path="/resultdebit" element={<ResultDebit />} />
         <Route path="/cash" element={<Cash />} />
         <Route path="/resultcash" element={<ResultCash />} />
+        <Route path="/manhisto" element={<ManHisto />} />
+        <Route path="/bigreser" element={<BigReser />} />
       </Routes>
+      </ReservationProvider>
     </Router>
   );
 };

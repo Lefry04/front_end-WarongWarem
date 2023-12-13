@@ -20,6 +20,13 @@ export const DashMan = () => {
 
   const navigate = useNavigate();
 
+  const goToHistory = () =>{
+    navigate('/manhisto');
+  };
+
+  const goToBigReser = () => {
+    navigate('/bigreser');
+  };
   
   return (
     <div className="dashman">
@@ -34,8 +41,8 @@ export const DashMan = () => {
           <button className="a">Capacity Monitoring</button>
           <button className="b">Reservation Report</button>
           <button className="c">Table Management</button>
-          <button className="d">Reservation History</button>
-          <button className="e">Big Reservation Approval</button>
+          <button className="d" onClick={goToHistory}>Reservation History</button>
+          <button className="e" onClick={goToBigReser}>Big Reservation Approval</button>
       </div>
       </div>
       </div>

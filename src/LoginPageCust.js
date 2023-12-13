@@ -1,26 +1,47 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 export const LoginPageCust = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
-  const handleConfirmClick = () => {
-    if (username === "customer" && password === "pass") {
-      console.log("Login berhasil");
-      goToDashCust();
-    } 
-    else if (username === "waiter" && password === "pass") {
-      console.log("Login berhasil");
-      goToDashWai();
-    }
-    else if (username === "manager" && password === "pass") {
-      console.log("Login berhasil");
-      goToDashMan();
-    }
-    else {
-      setErrorMessage("Username/password invalid");
+
+  const handleConfirmClick = async () => {
+    try {
+      const response = await axios.post('http://localhost:8000/api/login', {
+        username: username,
+        password: password,
+      });
+
+      if (response.data.message === 'Login successful') {
+        const userData = response.data.user;
+
+        switch (userData.role) {
+          case 'customer':
+            goToDashCust();
+            console.log(userData.id);
+            break;
+
+          case 'waiter':
+            goToDashWai();
+            break;
+
+          case 'manager':
+            goToDashMan();
+            break;
+
+          default:
+            setErrorMessage("Invalid role");
+            break;
+        }
+      } else {
+        setErrorMessage("Invalid credentials");
+      }
+    } catch (error) {
+      console.error('Error during login:', error);
+      setErrorMessage("Something went wrong. Please try again later.");
     }
   };
 
@@ -28,20 +49,19 @@ export const LoginPageCust = () => {
 
   const goToSignUpPage = () => {
     navigate('/signuppage');
-    };
+  };
 
   const goToDashCust = () => {
-        navigate('/dashcust');
-    };  
+    navigate('/dashcust');
+  };
 
   const goToDashWai = () => {
-      navigate('/dashwai');
-    };  
+    navigate('/dashwai');
+  };
 
   const goToDashMan = () => {
-      navigate('/dashman');
-    };  
-
+    navigate('/dashman');
+  };
 
   return (
     <div className="loginpagecust">
