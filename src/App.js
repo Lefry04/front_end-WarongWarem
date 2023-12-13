@@ -31,6 +31,10 @@ import ReportMonthly from "./ReportMonthly";
 import Monitoring from "./Monitoring";
 import ManHisto from "./ManHisto";
 import BigReser from "./BigReser";
+import Feedback from "./Feedback";
+import Feedback2 from "./Feedback2";
+import FeedbackAC from "./FeedbackAC";
+import Feedbackresult from "./Feedbackresult";
 
 const App = () => {
   
@@ -77,6 +81,10 @@ const App = () => {
         <Route path="/monitoring" element={<Monitoring />} /> 
         <Route path="/manhisto" element={<ManHisto />} />
         <Route path="/bigreser" element={<BigReser />} />
+        <Route path="/feedback" element={<Feedback />} />
+        <Route path="/feedback2" element={<Feedback2 />} />
+        <Route path="/feedbackAC" element={<FeedbackAC />} />
+        <Route path="feedbackresult" element={<Feedbackresult />} />
       </Routes>
       </ReservationProvider>
     </Router>
