@@ -36,7 +36,7 @@ const App = () => {
   
   useEffect(() => {
     // Ganti judul halaman saat aplikasi dimulai
-    document.title = 'Aplikasi Saya';
+    document.title = 'WarongWarem';
 
     // Fungsi cleanup (optional)
     return () => {
