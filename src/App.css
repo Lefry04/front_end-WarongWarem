@@ -3355,6 +3355,446 @@ td {
   color: #ffffff;
 }
 
+.feedback .image {
+  height: 858px;
+  width: 1350px;
+  overflow: hidden;
+}
+
+.feedback .rectangle1 {
+  background-color: rgba(255, 255, 255, 0.50);
+  top: 100px;
+  left: 183px;
+  width: 826px;
+  height: 135px;
+  border-radius: 21px;
+  position: relative;
+}
+
+.feedback .feed1 {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: bold; 
+  left: 480px;
+  top: -45px;
+  position: relative;
+  text-indent: 0; 
+  font-family: "Calibri-Regular", Helvetica, sans-serif;
+}
+
+.feedback .m1 {
+  width: 467px;
+  height: 51px;
+  top: 460px;
+  left: 140px;
+  position: absolute;
+  align-content: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.feedback .mv2 {
+  width: 467px;
+  height: 51px;
+  top: 460px;
+  left: 240px;
+  position: absolute;
+  align-content: left;
+  background: none;
+  border: none;
+}
+
+.feedback .m3 {
+  width: 467px;
+  height: 51px;
+  top: 460px;
+  left: 350px;
+  position: absolute;
+  align-content: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.feedback .m4 {
+  width: 467px;
+  height: 51px;
+  top: 460px;
+  left: 460px;
+  position: absolute;
+  align-content: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.feedback .m5 {
+  width: 467px;
+  height: 51px;
+  top: 460px;
+  left: 570px;
+  position: absolute;
+  align-content: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.feedback .rectangle2 {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  top: 320px;
+  left: 285px;
+  width: 604px;
+  height: 76px;
+  border-radius: 21px;
+  position: relative;
+}
+
+.feedback .title1 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold; 
+  width: 300px; /* Misalnya diperbesar menjadi 300px */
+  height: 50px;
+  left: 440px;
+  top: 255px;
+  position: relative;
+  text-indent: 0; 
+  font-family: "Calibri-Regular", Helvetica, sans-serif;
+  cursor: pointer;
+  background: none;
+  overflow: hidden; /* Atur overflow agar tetap dalam satu baris */
+  white-space: nowrap; /* Jangan izinkan pembentukan baris baru */
+}
+
+.feedback2 .image {
+  height: 858px;
+  width: 1350px;
+  overflow: hidden;
+}
+
+.feedback2 .rectangle1 {
+  background-color: rgba(255, 255, 255, 0.50);
+  top: 100px;
+  left: 183px;
+  width: 826px;
+  height: 135px;
+  border-radius: 21px;
+  position: relative;
+}
+
+.feedback2 .feed1 {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: bold; 
+  left: 480px;
+  top: -45px;
+  position: relative;
+  text-indent: 0; 
+  font-family: "Calibri-Regular", Helvetica, sans-serif;
+}
+
+.feedback2 .m1 {
+  width: 467px;
+  height: 51px;
+  top: 460px;
+  left: 340px;
+  position: absolute;
+  align-content: left;
+  background: none;
+  border: none;
+}
+
+.feedback2 .mv2g {
+  width: 467px;
+  height: 51px;
+  top: 460px;
+  left: 445px;
+  position: absolute;
+  text-align: left;
+  background: none;
+  border: none;
+}
+
+.feedback2 .m3 {
+  width: 467px;
+  height: 51px;
+  top: 460px;
+  left: 560px;
+  position: absolute;
+  align-content: left;
+  background: none;
+  border: none;
+}
+
+.feedback2 .m4 {
+  width: 467px;
+  height: 51px;
+  top: 460px;
+  left: 665px;
+  position: absolute;
+  align-content: left;
+  background: none;
+  border: none;
+}
+
+.feedback2 .m5 {
+  width: 467px;
+  height: 51px;
+  top: 460px;
+  left: 775px;
+  position: absolute;
+  align-content: left;
+  background: none;
+  border: none;
+}
+
+.feedback2 .rectangle2 {
+  background-color: rgba(255, 178, 15, 0.7);
+  top: 320px;
+  left: 285px;
+  width: 604px;
+  height: 76px;
+  border-radius: 21px;
+  position: relative;
+  cursor: pointer;
+}
+
+.feedback2 .title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold; 
+  left: 510px;
+  top: 245px;
+  position: relative;
+  cursor: pointer;
+  text-indent: 0; 
+  font-family: "Calibri-Regular", Helvetica, sans-serif;
+}
+
+.feedback2 .rectangle3 {
+  background-color: rgba(255, 178, 15, 0.7);
+  top: 720px;
+  left: 285px;
+  width: 604px;
+  height: 76px;
+  border-radius: 21px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.feedback2 .title1 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold; 
+  left: 485px;
+  top: 300px;
+  cursor: pointer;
+  position: relative;
+  text-indent: 0; 
+  font-family: "Calibri-Regular", Helvetica, sans-serif;
+}
+
+.feedback2 .rectangle4 {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  top: 830px;
+  cursor: pointer;
+  left: 285px;
+  width: 604px;
+  height: 76px;
+  border-radius: 21px;
+  position: absolute;
+}
+
+.feedback2 .title2 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: regular; 
+  left: 500px;
+  top: 360px;
+  position: relative;
+  cursor: pointer;
+  text-indent: 0; 
+  font-family: "Calibri-Regular", Helvetica, sans-serif;
+}
+
+.feedbackac .image {
+  height: 858px;
+  width: 1350px;
+  overflow: hidden;
+}
+
+.feedbackac .rectangle1 {
+  background-color: rgba(255, 255, 255, 0.50);
+  top: 100px;
+  left: 183px;
+  width: 826px;
+  height: 135px;
+  border-radius: 21px;
+  position: relative;
+}
+
+.feedbackac .feed1 {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: bold; 
+  left: 480px;
+  top: -45px;
+  position: relative;
+  text-indent: 0; 
+  font-family: "Calibri-Regular", Helvetica, sans-serif;
+}
+
+.feedbackac .rectangle2 {
+  background-color: rgba(255, 255, 255, 0.50);
+  top: 40px;
+  left: 183px;
+  width: 826px;
+  height: 320px;
+  border-radius: 21px;
+  position: relative;
+}
+
+.feedbackac .feed2 {
+  color: #ffffff;
+  font-size: 20px;
+  text-align: justify;
+  font-weight: bold; 
+  left: 205px;
+  top: 340px;
+  width: 780px;
+  position: absolute;
+  text-indent: 0; 
+  font-family: "Calibri-Regular", Helvetica, sans-serif;
+}
+
+.feedbackac .m1 {
+  width: 467px;
+  height: 51px;
+  top: 740px;
+  left: 340px;
+  position: absolute;
+  align-content: left;
+  background: none;
+  border: none;
+}
+
+.feedbackac .mv2g {
+  width: 467px;
+  height: 51px;
+  top: 740px;
+  left: 445px;
+  position: absolute;
+  text-align: left;
+  background: none;
+  border: none;
+}
+
+.feedbackac .m3 {
+  width: 467px;
+  height: 51px;
+  top: 740px;
+  left: 560px;
+  position: absolute;
+  align-content: left;
+  background: none;
+  border: none;
+}
+
+.feedbackac .m4 {
+  width: 467px;
+  height: 51px;
+  top: 740px;
+  left: 665px;
+  position: absolute;
+  align-content: left;
+  background: none;
+  border: none;
+}
+
+.feedbackac .m5 {
+  width: 467px;
+  height: 51px;
+  top: 740px;
+  left: 775px;
+  position: absolute;
+  align-content: left;
+  background: none;
+  border: none;
+}
+
+.feedbackac .rectangle3 {
+  background-color: rgba(255, 178, 15, 0.7);
+  top: 910px;
+  left: 285px;
+  width: 604px;
+  height: 76px;
+  border-radius: 21px;
+  position: absolute;
+}
+
+.feedbackac .title1 {
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold; 
+  left: 485px;
+  top: 300px;
+  position: relative;
+  text-indent: 0; 
+  font-family: "Calibri-Regular", Helvetica, sans-serif;
+}
+
+.feedbackresult .image {
+  height: 858px;
+  width: 1350px;
+  overflow: hidden;
+}
+
+.feedbackresult .title1 {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: bold; 
+  left: 230px;
+  top: 160px;
+  width: 760px;
+  text-align: center;
+  position: relative;
+  text-indent: 0; 
+  font-family: "Calibri-Regular", Helvetica, sans-serif;
+}
+
+.feedbackresult .title2 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: regular; 
+  left: 235px;
+  top: 160px;
+  width: 760px;
+  text-align: center;
+  position: relative;
+  text-indent: 0; 
+  font-family: "Calibri-Regular", Helvetica, sans-serif;
+}
+
+.feedbackresult .title3 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold; 
+  left: 660px;
+  top: 280px;
+  width: 760px;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  text-indent: 0; 
+  font-family: "Calibri-Regular", Helvetica, sans-serif;
+}
+
+
 /* ANIMATION, ANIMATION, AND ANIMATION!!! */
 
 /* ABOUT US PAGE */

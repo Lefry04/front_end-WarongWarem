@@ -36,6 +36,9 @@ export const DashCust = () => {
     navigate('/feedback')
   };
   
+  const goToFeedback = () => {
+    navigate('/feedback')
+  };
   return (
     <div className="dash-cust">
       <div className="background" >
