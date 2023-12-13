@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import React, { useEffect } from 'react';
+import { ReservationProvider } from "./ReservationContext";
 import ScrollToTop from './ScrollToTop';
 import FrontPage from './FrontPage';
 import LoginPageCust from "./LoginPageCust";
@@ -28,6 +29,8 @@ import ReserReportDash from "./ReserReportDash";
 import ReportDaily from "./ReportDaily";
 import ReportMonthly from "./ReportMonthly";
 import Monitoring from "./Monitoring";
+import ManHisto from "./ManHisto";
+import BigReser from "./BigReser";
 
 const App = () => {
   
@@ -44,7 +47,8 @@ const App = () => {
   return (
     <Router>
       <ScrollToTop />
-      <Routes>
+      <ReservationProvider>
+        <Routes>
         <Route path="/" element={<FrontPage />} />
         <Route path="/loginpagecust" element={<LoginPageCust />} />
         <Route path="/loginpageman" element={<LoginPageMan />} />
@@ -71,7 +75,10 @@ const App = () => {
         <Route path="/reportdaily" element={<ReportDaily/>} />
         <Route path="/reportmonthly" element={<ReportMonthly/>} />
         <Route path="/monitoring" element={<Monitoring />} /> 
+        <Route path="/manhisto" element={<ManHisto />} />
+        <Route path="/bigreser" element={<BigReser />} />
       </Routes>
+      </ReservationProvider>
     </Router>
   );
 };
