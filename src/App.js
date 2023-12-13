@@ -1,6 +1,8 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { useEffect } from 'react';
 import { ReservationProvider } from "./ReservationContext";
+import ScrollToTop from './ScrollToTop';
 import FrontPage from './FrontPage';
 import LoginPageCust from "./LoginPageCust";
 import AboutUsPage from "./AboutUsPage";
@@ -10,7 +12,7 @@ import LoginPageMan from "./LoginPageMan";
 import DashCust from "./DashCust";
 import DashWai from "./DashWai";
 import DashMan from "./DashMan";
-import Reservation  from "./Reservation";
+import Reservation from "./Reservation";
 import TableRes1 from "./TableRes1";
 import ResReser1 from "./ResReser1";
 import Pay1 from "./Pay1";
@@ -19,22 +21,32 @@ import Waiter from "./Waiter";
 import ContactUs from "./ContactUs";
 import Menu1 from "./Menu1";
 import Menu2 from "./Menu2";
-import ScrollToTop from "./ScrollToTop";
 import CreditDebit from "./CreditDebit";
 import ResultDebit from "./ResultDebit";
 import Cash from "./Cash";
 import ResultCash from "./ResultCash";
+import ReserReportDash from "./ReserReportDash";
+import ReportDaily from "./ReportDaily";
+import ReportMonthly from "./ReportMonthly";
+import Monitoring from "./Monitoring";
 import ManHisto from "./ManHisto";
 import BigReser from "./BigReser";
+import Feedback from "./Feedback";
+import Feedback2 from "./Feedback2";
+import FeedbackAC from "./FeedbackAC";
+import Feedbackresult from "./Feedbackresult";
+
+import { UserIdProvider } from "./UserIdContext";
 
 const App = () => {
-  
+
   return (
     <Router>
       <ScrollToTop />
-      <ReservationProvider>
-      <Routes>
-        <Route path="/" element={<FrontPage />} />
+      {/* <ReservationProvider> */}
+        <UserIdProvider>
+          <Routes>
+          <Route path="/" element={<FrontPage />} />
         <Route path="/loginpagecust" element={<LoginPageCust />} />
         <Route path="/loginpageman" element={<LoginPageMan />} />
         <Route path="/loginpagewai" element={<LoginPageWai />} />
@@ -56,10 +68,18 @@ const App = () => {
         <Route path="/resultdebit" element={<ResultDebit />} />
         <Route path="/cash" element={<Cash />} />
         <Route path="/resultcash" element={<ResultCash />} />
+        <Route path="/resetreportdash" element={<ReserReportDash />} />
+        <Route path="/reportdaily" element={<ReportDaily/>} />
+        <Route path="/reportmonthly" element={<ReportMonthly/>} />
+        <Route path="/monitoring" element={<Monitoring />} /> 
         <Route path="/manhisto" element={<ManHisto />} />
         <Route path="/bigreser" element={<BigReser />} />
+        <Route path="/feedback" element={<Feedback />} />
+        <Route path="/feedback2" element={<Feedback2 />} />
+        <Route path="/feedbackAC" element={<FeedbackAC />} />
+        <Route path="feedbackresult" element={<Feedbackresult />} />
       </Routes>
-      </ReservationProvider>
+      </UserIdProvider>
     </Router>
   );
 };

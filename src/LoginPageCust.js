@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { useUserId } from "./UserIdContext";
 
 export const LoginPageCust = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-
-
+  const { setUserId } = useUserId();
+  
   const handleConfirmClick = async () => {
     try {
       const response = await axios.post('http://localhost:8000/api/login', {
@@ -17,6 +18,8 @@ export const LoginPageCust = () => {
 
       if (response.data.message === 'Login successful') {
         const userData = response.data.user;
+
+        setUserId(userData.id);
 
         switch (userData.role) {
           case 'customer':

@@ -51,65 +51,133 @@
 
 // export default TableRes1;
 
+// import React, { useState, useContext } from "react";
+// import { useNavigate } from "react-router-dom";
+// import Axios from "axios";
+// import { useUserId } from "./UserIdContext";
+// import UserIdContext from './UserIdContext';
+
+
+// const TableRes1 = () => {
+
+//     const userId = useUserId();
+//     // const userId = useContext(UserIdContext);
+
+
+//     const [formData, setFormData] = useState({
+//         name: "",
+//         phone_number: "",
+//         number_of_guests: "",
+//         time: "",
+//         special_requests: "",
+//         table_type: "",
+//         id_user: UserIdContext.useUserId,
+//     });
+
+//     const [status, setStatus] = useState("idle");
+//     const [error, setError] = useState(null);
+
+//     const navigate = useNavigate();
+
+//     const handleInputChange = (event) => {
+//         const { name, value } = event.target;
+//         setFormData({
+//             ...formData,
+//             [name]: value,
+//         });
+//     };
+
+//     const handleTableReservation = async () => {
+//         setStatus("loading");
+
+//          // Ganti dengan ID yang valid
+
+//         // Menetapkan nilai id_user pada formData
+//         setFormData({
+//             ...formData,
+//             // id_user: userIdContext.userId,        
+//         });
+
+//         try {
+
+//             console.log("Data yang Dikirim:", formData);
+
+//             const response = await Axios.post("http://localhost:8000/api/create-reservation", formData);
+
+//             if (response.status === 200) {
+//                 setStatus("success");
+//                 navigate('/menu1');
+//             } else {
+//                 const error = response.data;
+//                 setStatus("error");
+//                 setError(error.message || "Something went wrong");
+//             }
+
+//             navigate('/menu1');
+//         } catch (error) {
+//             setStatus("error");
+//             setError("Failed to connect to the server");
+//         }
+//     };
+
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Axios from "axios";
+import { useUserId } from "./UserIdContext";
 
 const TableRes1 = () => {
-    const [formData, setFormData] = useState({
-        name: "",
-        phone_number: "",
-        number_of_guests: "",
-        time: "",
-        special_requests: "",
-        table_type: "",
+  const { userId } = useUserId();
+  const [formData, setFormData] = useState({
+    name: "",
+    phone_number: "",
+    number_of_guests: "",
+    time: "",
+    special_requests: "",
+    table_type: "",
+    id_user: userId,
+  });
+
+  const [status, setStatus] = useState("idle");
+  const [error, setError] = useState(null);
+
+  const navigate = useNavigate();
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({
+      ...formData,
+      [name]: value,
     });
+  };
 
-    const [status, setStatus] = useState("idle");
-    const [error, setError] = useState(null);
+  const handleTableReservation = async () => {
+    setStatus("loading");
 
-    const navigate = useNavigate();
+    // Ganti dengan ID yang valid
 
-    const handleInputChange = (event) => {
-        const { name, value } = event.target;
-        setFormData({
-            ...formData,
-            [name]: value,
-        });
-    };
+    try {
+      console.log("Data yang Dikirim:", formData);
 
-    const handleTableReservation = async () => {
-        setStatus("loading");
+      const response = await Axios.post(
+        "http://localhost:8000/api/create-reservation",
+        formData
+      );
 
-        const dummyUserId = 7; // Ganti dengan ID yang valid
+      if (response.status === 200) {
+        setStatus("success");
+        navigate("/menu1");
+      } else {
+        const error = response.data;
+        setStatus("error");
+        setError(error.message || "Something went wrong");
+      }
 
-        // Menetapkan nilai id_user pada formData
-        setFormData({
-            ...formData,
-            id_user: dummyUserId,
-        });
-
-        try {
-
-            console.log("Data yang Dikirim:", formData);
-
-            const response = await Axios.post("http://localhost:8000/api/create-reservation", formData);
-
-            if (response.status === 200) {
-                setStatus("success");
-                navigate('/menu1');
-            } else {
-                const error = response.data;
-                setStatus("error");
-                setError(error.message || "Something went wrong");
-            }
-
-            navigate('/menu1');
-        } catch (error) {
-            setStatus("error");
-            setError("Failed to connect to the server");
-        }
-    };
+      navigate("/menu1");
+    } catch (error) {
+      setStatus("error");
+      setError("Failed to connect to the server");
+    }
+  };
 
     return (
         <div className="tableres1">
@@ -160,6 +228,7 @@ const TableRes1 = () => {
                             placeholder="If there are any special requests, such as table preferences or dietary needs, inform us here."
                             className="e1"
                             name="special_requests"
+                            type="text"
                             value={formData.special_requests}
                             onChange={handleInputChange}
                         />

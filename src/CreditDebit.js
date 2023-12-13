@@ -1,32 +1,18 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useReservationContext } from "./ReservationContext";
+// import { useReservationContext } from "./ReservationContext";
 import axios from "axios";
 
 const CreditDebit = () => {
-    const { reservationData, updateReservationData } = useReservationContext();
+    // const { reservationData, updateReservationData } = useReservationContext();
     const [errors, setErrors] = useState({});
     const navigate = useNavigate();
 
-    const handleSubmit = async () => {
-        try {
-            // Validasi formulir jika diperlukan
-            const response = await axios.post("http://localhost:8000/api/reservations-warongwarem", reservationData);
-
-            // Handle response dari backend sesuai kebutuhan
-
+    const handleSubmit =  () => {
             navigate('/resultdebit');
-        } catch (error) {
-            // Handle error dari backend
-            if (error.response) {
-                setErrors(error.response.data.errors);
-            } else {
-                console.error("Error:", error.message);
-            }
-        }
-    };
+    }
 
-    return (
+return (
         <div className="creditdebit">
             <div className="background">
                 <div className="overlap-group-wrapper">
@@ -51,6 +37,6 @@ const CreditDebit = () => {
             </div>
         </div>
     )
-}
+};
 
 export default CreditDebit;

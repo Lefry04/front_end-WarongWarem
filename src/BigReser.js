@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 export const BigReser = () => {
 
     const [currentTime, setCurrentTime] = useState("");
     const [currentDate, setCurrentDate] = useState("");
+    const [dummyData, setDummyData] = useState([]);
 
     useEffect(() => {
         const updateDateTime = () => {
@@ -14,16 +16,19 @@ export const BigReser = () => {
 
         const intervalId = setInterval(updateDateTime, 1000);
 
+        // Fetch data from API
+        axios.post('http://localhost:8000/api/getdata') // Ganti URL_API dengan URL sesuai endpoint di Laravel
+            .then(response => {
+                setDummyData(response.data.reservations);
+            })
+            .catch(error => {
+                console.error(error);
+            });
+
         return () => clearInterval(intervalId);
     }, []);
 
     // Data dummy untuk tabel
-    const [dummyData, setDummyData] = useState([
-        { id: 1, name: "John Doe", phoneNumber: 62852, numberOfGuest: 2, datetime: "2023-11-11 14:40:00", status: "Waiting", table: "Outdoor", specialRequest: "Vegetarian menu" },
-        { id: 2, name: "Mary Smith", phoneNumber: 6296, numberOfGuest: 6, datetime: "2023-11-12 14:00:00", status: "Waiting", table: "Indoor", specialRequest: "Anniversary Celebration" },
-        // Tambahkan data dummy lainnya sesuai kebutuhan
-    ]);
-
     // State untuk menyimpan ID baris yang dipilih
     const [selectedRowIds, setSelectedRowIds] = useState([]);
 
@@ -52,34 +57,58 @@ export const BigReser = () => {
         setSelectedRowIds([]);
     };
 
-    const handleReserve = () => {
-        // Implementasikan logika untuk mengubah status menjadi "Active"
+    const handleReserve = async () => {
         console.log("Reserve button clicked");
-        // Misalnya, kita ubah status menjadi "Active" untuk semua baris yang dipilih
-        const updatedData = dummyData.map((item) => {
-            if (selectedRowIds.includes(item.id)) {
-                return { ...item, status: "Active" };
+    
+        if (selectedRowIds.length > 0) {
+            try {
+                // Kirim permintaan ke server untuk memperbarui status menjadi "Active"
+                const response = await axios.put('http://localhost:8000/api/reserve', { ids: selectedRowIds });
+                console.log(response.data); // Output dari server (optional)
+    
+                // Perbarui status di sisi klien jika permintaan berhasil
+                const updatedData = dummyData.map((item) => {
+                    if (selectedRowIds.includes(item.id_reservation) && item.status === "Waiting") {
+                        return { ...item, status: "Active" };
+                    }
+                    return item;
+                });
+    
+                setDummyData(updatedData);
+                setSelectedRowIds([]);
+            } catch (error) {
+                console.error("Error updating status:", error);
             }
-            return item;
-        });
-        console.log(updatedData);
-        setDummyData(updatedData);
-        setSelectedRowIds([]);
+        } else {
+            console.log("No row selected");
+        }
     };
-
-    const handleReject = () => {
-        // Implementasikan logika untuk mengubah status menjadi "Inactive"
+    
+    const handleReject = async () => {
         console.log("Reject button clicked");
-        // Misalnya, kita ubah status menjadi "Inactive" untuk semua baris yang dipilih
-        const updatedData = dummyData.map((item) => {
-            if (selectedRowIds.includes(item.id)) {
-                return { ...item, status: "Inactive" };
+    
+        if (selectedRowIds.length > 0) {
+            try {
+                // Kirim permintaan ke server untuk memperbarui status menjadi "Inactive"
+                const response = await axios.put('http://localhost:8000/api/reject', { ids: selectedRowIds });
+                console.log(response.data); // Output dari server (optional)
+    
+                // Perbarui status di sisi klien jika permintaan berhasil
+                const updatedData = dummyData.map((item) => {
+                    if (selectedRowIds.includes(item.id_reservation) && item.status === "Waiting") {
+                        return { ...item, status: "Inactive" };
+                    }
+                    return item;
+                });
+    
+                setDummyData(updatedData);
+                setSelectedRowIds([]);
+            } catch (error) {
+                console.error("Error updating status:", error);
             }
-            return item;
-        });
-        console.log(updatedData);
-        setDummyData(updatedData);
-        setSelectedRowIds([]);
+        } else {
+            console.log("No row selected");
+        }
     };
 
     return (
@@ -102,38 +131,28 @@ export const BigReser = () => {
                                             <th>Number of Guests</th>
                                             <th>Date & Time</th>
                                             <th>Status</th>
-                                            <th>Table</th>
                                             <th>Special Requests</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {dummyData.map((item) => (
-                                            <tr key={item.id}>
+                                    {dummyData
+                                            .filter(item => item.table_type == "restaurant") // Menyaring baris dengan table_type !== "restaurant"
+                                            .map((item) => (
+                                            <tr key={item.id_reservation}>
                                                 <td>
                                                     <div
-                                                        onClick={() => handleRowSelect(item.id)}
+                                                        onClick={() => handleRowSelect(item.id_reservation)}
                                                         className={`select-box ${selectedRowIds.includes(item.id) ? "selected" : ""}`}
                                                     >
-                                                        {selectedRowIds.includes(item.id) ? "✓" : ""}
+                                                        {selectedRowIds.includes(item.id_reservation) ? "✓" : ""}
                                                     </div>
                                                 </td>
                                                 <td>{item.name}</td>
-                                                <td>{item.phoneNumber}</td>
-                                                <td>{item.numberOfGuest}</td>
-                                                <td>{item.datetime}</td>
-                                                <td>
-                                                    <select
-                                                        value={item.status}
-                                                        onChange={(e) => handleStatusChange(item.id, e.target.value)}
-                                                        className={`status-dropdown ${selectedRowIds.includes(item.id) ? "selected" : ""}`}
-                                                    >
-                                                        <option value="Active">Active</option>
-                                                        <option value="Waiting">Waiting</option>
-                                                        <option value="Inactive">Inactive</option>
-                                                    </select>
-                                                </td>
-                                                <td>{item.table}</td>
-                                                <td>{item.specialRequest}</td>
+                                                <td>{item.phone_number}</td>
+                                                <td>{item.number_of_guests}</td>
+                                                <td>{item.time}</td>
+                                                <td>{item.status}</td>
+                                                <td>{item.special_requests}</td>
                                             </tr>
                                         ))}
                                     </tbody>

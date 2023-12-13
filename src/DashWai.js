@@ -23,6 +23,10 @@ export const DashWai = () => {
   const goToWaiter = () => {
     navigate('/waiter');
   };
+
+  const goToLoginPage = () => {
+    navigate('/loginpagecust');
+  };
   
   return (
     <div className="dashwai">
@@ -35,6 +39,7 @@ export const DashWai = () => {
           <div className="text-wrapper-2">{currentTime}</div>
           <div className="text-wrapper-3">{currentDate}</div>
           <button className="button" onClick={goToWaiter}>Dashboard</button>
+          <img className="avatar" alt="Avatar" src="avatar 1.png" onClick={goToLoginPage}/>
       </div>
       </div>
       </div>

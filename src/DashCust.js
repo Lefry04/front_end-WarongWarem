@@ -32,7 +32,10 @@ export const DashCust = () => {
     navigate('/loginpagecust')
   };
 
-  
+  const goToFeedback = () => {
+    navigate('/feedback')
+  };
+
   return (
     <div className="dash-cust">
       <div className="background" >
@@ -49,7 +52,7 @@ export const DashCust = () => {
           <div className="reservation"><img src="image 29.png" /></div>
           <button className="history" onClick={goToHistory}>History</button>
           <div className="history-icon"><img src="history.png"/></div>
-          <button className="feedback">Feedback</button>
+          <button className="feedback" onClick={goToFeedback}>Feedback</button>
           <div className="feedback-icon"><img src="feedback.png"/></div>
         </div>
       </div>
