@@ -1,5 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { useEffect } from 'react';
 import ScrollToTop from './ScrollToTop';
 import FrontPage from './FrontPage';
 import LoginPageCust from "./LoginPageCust";
@@ -29,6 +30,16 @@ import ReportMonthly from "./ReportMonthly";
 import Monitoring from "./Monitoring";
 
 const App = () => {
+  
+  useEffect(() => {
+    // Ganti judul halaman saat aplikasi dimulai
+    document.title = 'Aplikasi Saya';
+
+    // Fungsi cleanup (optional)
+    return () => {
+      document.title = 'Judul Halaman Asli';
+    };
+  }, []);
   
   return (
     <Router>
