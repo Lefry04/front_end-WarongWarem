@@ -1358,17 +1358,37 @@
 .history button {
   position: relative;
   width: 826px;
-  height: 80px;
+  height: 140px;
   left: 105px;
-  top: 210px;
+  top: 270px;
   border: none;
+  margin-bottom: 20px;
   border-radius: 24px;
-  background-color: rgba(255, 255, 255, 0.85);
+}
+
+/* Styles for different statuses */
+.history button.active {
+  background-color: rgba(157, 253, 133, 0.5);
+}
+
+.history button.waiting {
+  background-color: rgba(255, 178, 15, 0.5);
+}
+
+.history button.inactive {
+  background-color: rgba(255, 0, 0, 0.5); 
+}
+
+.history button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .history .a,
 .history .b,
-.history .c {
+.history .c,
+.history .d,
+.history .e,
+.history .f {
   left: 10px;
   position: absolute;
   color: #000000;
@@ -1383,17 +1403,103 @@
   top: 20px;
 }
 
+.history .c {
+  top: 40px;
+}
+
+.history .d {
+  top: 60px;
+}
+
+.history .e {
+  top: 80px;
+}
+
+.history .f {
+  top: 100px;
+}
+
 .history .line2 {
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 20px;
-  width: 423px;
-  height: 68px;
-  left: 210px;
-  top: 275px;
-  border-radius: 24px;
-  position: absolute;
+  display: inline-block;
+  background-color: #000000;
+  /* Green background color, adjust as needed */
+  color: white;
+  padding: 10px 15px;
   text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
   border: none;
+  border-radius: 24px;
+  height: 60px;
+  margin-top: 10px;
+  /* Adjust margin as needed */
+}
+
+.history .h {
+  background-color: rgba(157, 253, 133, 0.5);
+  width: 191px;
+  height: 15px;
+  position: absolute;
+  top: 205px;
+  left: 105px;
+  border-radius: 8px;
+}
+
+.history .k {
+  background-color: rgba(255, 178, 15, 0.50);
+  width: 191px;
+  height: 15px;
+  position: absolute;
+  top: 205px;
+  left: 420px;
+  border-radius: 8px;
+}
+
+.history .m {
+  background-color: rgba(255, 0, 0, 0.50);
+  width: 191px;
+  height: 15px;
+  position: absolute;
+  top: 205px;
+  left: 735px;
+  border-radius: 8px;
+}
+
+.history .hi {
+  color: #ffffff;
+  width: 191px;
+  height: 15px;
+  position: absolute;
+  top: 215px;
+  left: 175px;
+  font-family: "Poppins-Regular", Helvetica;
+  font: 25px;
+  border-radius: 8px;
+}
+
+.history .ku {
+  color: #ffffff;
+  width: 191px;
+  height: 15px;
+  position: absolute;
+  top: 215px;
+  left: 485px;
+  font-family: "Poppins-Regular", Helvetica;
+  font: 25px;
+  border-radius: 8px;
+}
+
+.history .me {
+  color: #ffffff;
+  width: 191px;
+  height: 15px;
+  position: absolute;
+  top: 215px;
+  left: 805px;
+  font-family: "Poppins-Regular", Helvetica;
+  font: 25px;
+  border-radius: 8px;
 }
 
 .waiter .text-wrapper-2 {
@@ -2668,7 +2774,8 @@ td {
   color: #000000;
   cursor: pointer;
   text-decoration: underline;
-  transition: color 0.3s ease-in-out; /* Efek transisi pada perubahan warna */
+  transition: color 0.3s ease-in-out;
+  /* Efek transisi pada perubahan warna */
 }
 
 .manhisto .rectangle {
@@ -2740,7 +2847,7 @@ td {
   font-size: 19px;
   left: 160px;
   top: 235px;
-} 
+}
 
 .manhisto .list {
   top: 295px;
@@ -2766,7 +2873,8 @@ td {
 }
 
 .manhisto .list li .left {
-  width: 150px; /* Menyesuaikan lebar div untuk data */
+  width: 150px;
+  /* Menyesuaikan lebar div untuk data */
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   height: auto;
@@ -2787,11 +2895,13 @@ td {
 
   /* Atur warna sesuai kondisi status */
   &.reserved {
-    color: #4caf50; /* Hijau untuk Reserved */
+    color: #4caf50;
+    /* Hijau untuk Reserved */
   }
 
   &.cancelled {
-    color: #ff0000; /* Merah untuk Cancelled */
+    color: #ff0000;
+    /* Merah untuk Cancelled */
   }
 }
 
