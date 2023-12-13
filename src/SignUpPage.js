@@ -13,6 +13,11 @@ export const SignUpPage = () => {
   
   const navigate = useNavigate();
 
+  const goToLoginPageCust = () => {
+      navigate('/loginpagecust');
+  };
+
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -105,7 +110,7 @@ export const SignUpPage = () => {
                 <div className="text-wrapper-7">Confirm your password</div>
                 <div className="what-s-your-name">What&#39;s your name?</div>
                 <div className="div-wrapper">
-                  <button type="submit">REGISTER</button>
+                  <button type="submit" onClick={goToLoginPageCust}>REGISTER</button>
                 </div>
               </form>
             </div>

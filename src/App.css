@@ -1358,17 +1358,20 @@
 .history button {
   position: relative;
   width: 826px;
-  height: 80px;
+  height: 140px;
   left: 105px;
-  top: 210px;
+  top: 270px;
   border: none;
   border-radius: 24px;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(157, 253, 133, 0.50);
 }
 
 .history .a,
 .history .b,
-.history .c {
+.history .c,
+.history .d,
+.history .e,
+.history .f {
   left: 10px;
   position: absolute;
   color: #000000;
@@ -1383,6 +1386,22 @@
   top: 20px;
 }
 
+.history .c {
+  top: 40px;
+}
+
+.history .d {
+  top: 60px;
+}
+
+.history .e {
+  top: 80px;
+}
+
+.history .f {
+  top: 100px;
+}
+
 .history .line2 {
   background-color: rgba(0, 0, 0, 0.5);
   font-size: 20px;
@@ -1394,6 +1413,72 @@
   position: absolute;
   text-align: center;
   border: none;
+}
+
+.history .h {
+  background-color: rgba(157, 253, 133, 0.5);
+  width: 191px;
+  height: 15px;
+  position: absolute;
+  top: 205px;
+  left: 105px;
+  border-radius: 8px;
+}
+
+.history .k {
+  background-color: rgba(255, 178, 15, 0.50);
+  width: 191px;
+  height: 15px;
+  position: absolute;
+  top: 205px;
+  left: 420px;
+  border-radius: 8px;
+}
+
+.history .m {
+  background-color: rgba(255, 0, 0, 0.50);
+  width: 191px;
+  height: 15px;
+  position: absolute;
+  top: 205px;
+  left: 735px;
+  border-radius: 8px;
+}
+
+.history .hi {
+  color: #ffffff;
+  width: 191px;
+  height: 15px;
+  position: absolute;
+  top: 215px;
+  left: 175px;
+  font-family: "Poppins-Regular", Helvetica;
+  font: 25px;
+  border-radius: 8px;
+}
+
+.history .ku {
+  color: #ffffff;
+  width: 191px;
+  height: 15px;
+  position: absolute;
+  top: 215px;
+  left: 485px;
+  font-family: "Poppins-Regular", Helvetica;
+  font: 25px;
+  border-radius: 8px;
+}
+
+.history .me {
+  color: #ffffff;
+  width: 191px;
+  height: 15px;
+  position: absolute;
+  top: 215px;
+  left: 805px;
+  font-family: "Poppins-Regular", Helvetica;
+  font: 25px;
+  border-radius: 8px;
 }
 
 .waiter .text-wrapper-2 {
