@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+// Commenting out Axios import as it's not used in this version
+// import Axios from "axios";
 
 export const SignUpPage = () => {
   const [formData, setFormData] = useState({
@@ -8,22 +10,54 @@ export const SignUpPage = () => {
     confirmPassword: "",
     profileName: "",
   });
+  
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({ ...prevData, [name]: value }));
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // TODO: Add your form submission logic here
-  };
 
-  const goToLoginPageCust = () => {
+    // Validasi bahwa semua data telah terisi
+    if (!formData.username || !formData.password || !formData.confirmPassword || !formData.profileName) {
+      console.error("Please fill in all fields");
+      return;
+    }
+
+    // Validasi bahwa password dan konfirmasi password sama
+    if (formData.password !== formData.confirmPassword) {
+      console.error("Password and confirm password do not match");
+      return;
+    }
+
+    // Commenting out Axios request as it's not used in this version
+    /*
+    try {
+      const response = await Axios.post('http://localhost:8000/api/register', {
+        username: formData.username,
+        password: formData.password,
+        profile_name: formData.profileName,
+      });
+      console.log(response.data);
+
+      // Pindah ke halaman login hanya jika registrasi berhasil
+      navigate('/loginpagecust');
+    } catch (error) {
+      console.error(error.response.data);
+    }
+    */
+
+    // Simulating a successful registration without making a server request
+    console.log("Simulated registration success");
+
+    // Pindah ke halaman login hanya jika registrasi berhasil
     navigate('/loginpagecust');
   };
-
-  const navigate = useNavigate();
 
   return (
     <div className="sign-up-page">
@@ -75,9 +109,6 @@ export const SignUpPage = () => {
                 </div>
               </form>
             </div>
-            <button className="div-wrapper" onClick={goToLoginPageCust}>
-              REGISTER
-            </button>
           </div>
         </div>
       </div>
