@@ -1647,6 +1647,15 @@
   top: 245px;
 }
 
+.waiter .d {
+  position: absolute;
+  color: #ffffff;
+  font: bold;
+  font-size: 15px;
+  left: 920px;
+  top: 235px;
+}
+
 .waiter button {
   width: 108px;
   height: 40px;
@@ -1675,6 +1684,11 @@
 .waiter .reserve {
   left: 1280px;
   background-color: rgba(2, 214, 49, 1);
+}
+
+.waiter .back {
+  left: 524px;
+  background-color: rgba(255, 0, 0, 1);
 }
 
 .change {
@@ -3654,6 +3668,16 @@ td {
   }
 }
 
+.avatar {
+  cursor: pointer; /* Add pointer cursor to indicate it's clickable */
+  transform: scale(1); /* Set initial scale */
+  transition: transform 0.3s ease; /* Add transition effect for scale */
+}
+
+.avatar:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
 /* DASHMAN PAGE */
 .dashman .text-wrapper,
 .dashman .a,
@@ -3711,4 +3735,58 @@ td {
 
 .reportdaily .back:hover {
   transform: scale(1.1);
+}
+
+/* DASHBOARD WAITER*/
+/* Add this to your CSS file or style section */
+
+/* Unselect button */
+.unselect:hover {
+  background-color: #ddd; /* Change background color on hover */
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+/* Select button */
+.select:hover {
+  background-color: #ddd; /* Change background color on hover */
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+/* Reject button */
+.reject:hover {
+  background-color: #ddd; /* Change background color on hover */
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+/* Reserve button */
+.reserve:hover {
+  background-color: #ddd; /* Change background color on hover */
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+/* Selected items button */
+.selected {
+  background-color: #4CAF50; /* Set default background color */
+  color: white; /* Set default text color */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add transition effect */
+}
+
+.selected:hover {
+  background-color: #45a049; /* Change background color on hover */
+}
+
+.back:hover {
+  background-color: #748593; /* Change background color on hover */
+}
+
+.manhisto .back {
+  top: 920px;
+  left: 674px;
+  border: none;
+  background: none;
+  background-color: rgb(187, 108, 108);
+}
+
+.manhisto .back:hover {
+  background-color: #748593; /* Change background color on hover */
 }

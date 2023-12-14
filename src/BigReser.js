@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export const BigReser = () => {
+    const navigate = useNavigate();  // Move useNavigate inside the component
+
+    const goToDashMan = () => {
+        navigate('/dashman');
+    };
 
     const [currentTime, setCurrentTime] = useState("");
     const [currentDate, setCurrentDate] = useState("");
@@ -166,6 +172,7 @@ export const BigReser = () => {
                         <button className="select" onClick={handleSelectAll}>Select all</button>
                         <button className="reject" onClick={handleReject}>Reject</button>
                         <button className="reserve" onClick={handleReserve}>Reserve</button>
+                        <button className="back" onClick={goToDashMan}>Back</button>
                         <button className="selected">{`${selectedRowIds.length} Item/s selected`}</button>
                     </div>
                 </div>

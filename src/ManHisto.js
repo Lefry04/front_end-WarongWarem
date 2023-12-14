@@ -1,111 +1,17 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export const ManHisto = () => {
+    const navigate = useNavigate();  // Move useNavigate inside the component
+
+    const goToDashMan = () => {
+        navigate('/dashman');
+    };
+
     const [currentTime, setCurrentTime] = useState("");
     const [currentDate, setCurrentDate] = useState("");
-    // const [historyData, setHistoryData] = useState([]);
     const [dummyData, setDummyData] = useState([]);
-
-
-    // useEffect(() => {
-    //     const updateDateTime = () => {
-    //         const now = new Date();
-    //         setCurrentTime(now.toLocaleTimeString());
-    //         setCurrentDate(now.toLocaleDateString());
-    //     };
-
-    //     const intervalId = setInterval(updateDateTime, 1000);
-
-    //     // Fetch dummy data (replace this with your actual data fetching logic)
-    //     const dummyData = [
-    //         {
-    //             id: 1,
-    //             name: "Delon",
-    //             status: "Reserved",
-    //             date: "2023-12-08",
-    //             time: "14:30",
-    //             numberOfGuests: 4,
-    //         },
-    //         {
-    //             id: 2,
-    //             name: "Delon",
-    //             status: "Cancelled",
-    //             date: "2023-12-07",
-    //             time: "19:45",
-    //             numberOfGuests: 2,
-    //         },
-    //         {
-    //             id: 3,
-    //             name: "Delon",
-    //             status: "Cancelled",
-    //             date: "2023-12-07",
-    //             time: "19:45",
-    //             numberOfGuests: 2,
-    //         },
-    //         {
-    //             id: 4,
-    //             name: "Delon",
-    //             status: "Cancelled",
-    //             date: "2023-12-07",
-    //             time: "19:45",
-    //             numberOfGuests: 2,
-    //         },
-    //         {
-    //             id: 5,
-    //             name: "Delon",
-    //             status: "Reserved",
-    //             date: "2023-12-07",
-    //             time: "19:45",
-    //             numberOfGuests: 2,
-    //         },
-    //         {
-    //             id: 6,
-    //             name: "Delon",
-    //             status: "Cancelled",
-    //             date: "2023-12-07",
-    //             time: "19:45",
-    //             numberOfGuests: 2,
-    //         },
-    //         {
-    //             id: 7,
-    //             name: "Delon",
-    //             status: "Reserved",
-    //             date: "2023-12-07",
-    //             time: "19:45",
-    //             numberOfGuests: 2,
-    //         },
-    //         {
-    //             id: 8,
-    //             name: "Delon",
-    //             status: "Cancelled",
-    //             date: "2023-12-07",
-    //             time: "19:45",
-    //             numberOfGuests: 2,
-    //         },
-    //         {
-    //             id: 9,
-    //             name: "Delon",
-    //             status: "Cancelled",
-    //             date: "2023-12-07",
-    //             time: "19:45",
-    //             numberOfGuests: 2,
-    //         },
-    //         {
-    //             id: 10,
-    //             name: "Delon",
-    //             status: "Cancelled",
-    //             date: "2023-12-07",
-    //             time: "19:45",
-    //             numberOfGuests: 2,
-    //         },
-    //         // Add more dummy data as needed
-    //     ];
-
-    //     setHistoryData(dummyData);
-
-    //     return () => clearInterval(intervalId);
-    // }, []);
 
     useEffect(() => {
         const updateDateTime = () => {
@@ -117,7 +23,7 @@ export const ManHisto = () => {
         const intervalId = setInterval(updateDateTime, 1000);
 
         // Fetch data from API
-        axios.post('http://localhost:8000/api/getdata') // Ganti URL_API dengan URL sesuai endpoint di Laravel
+        axios.post('http://localhost:8000/api/getdata') // Replace with your actual API endpoint
             .then(response => {
                 setDummyData(response.data.reservations);
             })
@@ -141,6 +47,7 @@ export const ManHisto = () => {
                         <p className="a">DASHBOARD</p>
                         <p className="b">WARONGWAREM</p>
                         <p className="c">History and Recent</p>
+                        <button className="back" onClick={goToDashMan}>Back</button>
                         <div className="list">
                             <ul>
                                 {dummyData.map((item) => (
