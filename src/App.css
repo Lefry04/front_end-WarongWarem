@@ -1677,6 +1677,12 @@
   background-color: rgba(2, 214, 49, 1);
 }
 
+.change {
+  left: 1280px;
+  background-color: rgba(2, 214, 49, 1);
+  position: absolute;
+}
+
 .waiter .selected {
   left: 135px;
   width: 160px;

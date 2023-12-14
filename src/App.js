@@ -25,9 +25,7 @@ import CreditDebit from "./CreditDebit";
 import ResultDebit from "./ResultDebit";
 import Cash from "./Cash";
 import ResultCash from "./ResultCash";
-import ReserReportDash from "./ReserReportDash";
 import ReportDaily from "./ReportDaily";
-import ReportMonthly from "./ReportMonthly";
 import Monitoring from "./Monitoring";
 import ManHisto from "./ManHisto";
 import BigReser from "./BigReser";
@@ -35,6 +33,7 @@ import Feedback from "./Feedback";
 import Feedback2 from "./Feedback2";
 import FeedbackAC from "./FeedbackAC";
 import Feedbackresult from "./Feedbackresult";
+import Reschedule from "./Reschedule";
 
 import { UserIdProvider } from "./UserIdContext";
 
@@ -68,16 +67,15 @@ const App = () => {
         <Route path="/resultdebit" element={<ResultDebit />} />
         <Route path="/cash" element={<Cash />} />
         <Route path="/resultcash" element={<ResultCash />} />
-        <Route path="/resetreportdash" element={<ReserReportDash />} />
         <Route path="/reportdaily" element={<ReportDaily/>} />
-        <Route path="/reportmonthly" element={<ReportMonthly/>} />
         <Route path="/monitoring" element={<Monitoring />} /> 
         <Route path="/manhisto" element={<ManHisto />} />
         <Route path="/bigreser" element={<BigReser />} />
         <Route path="/feedback" element={<Feedback />} />
         <Route path="/feedback2" element={<Feedback2 />} />
         <Route path="/feedbackAC" element={<FeedbackAC />} />
-        <Route path="feedbackresult" element={<Feedbackresult />} />
+        <Route path="/feedbackresult" element={<Feedbackresult />} />
+        <Route path="/reschedule" element={<Reschedule />} />
       </Routes>
       </UserIdProvider>
     </Router>

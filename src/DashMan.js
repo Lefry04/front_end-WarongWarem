@@ -20,7 +20,7 @@ export const DashMan = () => {
   const navigate = useNavigate();
 
   const goToReserReportDash = () => {
-    navigate('/resetreportdash');
+    navigate('/reportdaily');
   };
 
   const goToCapacityMonitoring = () => {
@@ -39,6 +39,10 @@ export const DashMan = () => {
     navigate('/loginpagecust');
   };
 
+  const goToReschedule = () => {
+    navigate('/reschedule');
+  };
+
   return (
     <div className="dashman">
       <div className="background" >
@@ -53,6 +57,7 @@ export const DashMan = () => {
             <button className="b" onClick={goToReserReportDash}>Reservation Report</button>
             <button className="c" onClick={goToHistory}>Reservation History</button>
             <button className="d" onClick={goToBigReser}>Big Reservation Approval</button>
+            <button className="e" onClick={goToReschedule}>Reschedule</button>
             <img className="avatar" alt="Avatar" src="avatar 1.png" onClick={goToLoginPage}/>
           </div>
         </div>
