@@ -47,7 +47,7 @@ const Reschedule = () => {
 
     const handleTimeChange = async () => {
         console.log("Change Time button clicked");
-    
+
         if (selectedRowId && newReservationTime.trim() !== "") {
             try {
                 const response = await axios.put('http://localhost:8000/api/change-time', {
@@ -55,8 +55,14 @@ const Reschedule = () => {
                     new_time: newReservationTime, // Ganti nama parameter sesuai dengan yang diharapkan oleh Laravel
                 });
                 console.log(response.data);
-    
-                // ...
+
+                setTimeout(() => {
+                    window.location.reload(true);
+                    // Display a success alert
+                    alert("Reservation successfully rescheduled!");
+                }, 500);
+
+                console.log("Schedule updated successfully");
             } catch (error) {
                 console.error("Error updating time:", error);
             }
@@ -64,7 +70,7 @@ const Reschedule = () => {
             console.log("Invalid input or no row selected");
         }
     };
-    
+
     return (
         <div className="waiter">
             <div className="background">
@@ -84,7 +90,7 @@ const Reschedule = () => {
                                             <th>Phone Number</th>
                                             <th>Number of Guests</th>
                                             <th>Date & Time</th>
-                                            <th>Table</th>
+                                            <th>status</th>
                                             <th>Change Reservation Time</th>
                                         </tr>
                                     </thead>
@@ -105,7 +111,7 @@ const Reschedule = () => {
                                                     <td>{item.phone_number}</td>
                                                     <td>{item.number_of_guests}</td>
                                                     <td>{item.time}</td>
-                                                    <td>{item.table_type}</td>
+                                                    <td>{item.status}</td>
                                                     <td>
                                                         {selectedRowId === item.id_reservation && (
                                                             <>
@@ -127,6 +133,7 @@ const Reschedule = () => {
                         <p className="a">DASHBOARD</p>
                         <p className="b">WARONGWAREM</p>
                         <p className="c">List of Reservations for Warung Rarem Customers</p>
+                        <p className="de">The Change button will only be active when its status is 'Waiting'</p>
                         <button onClick={handleTimeChange} className="change">Change Time</button>
                         <button className="reject" onClick={goToDashMan}>Back</button>
                     </div>

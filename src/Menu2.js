@@ -29,7 +29,7 @@ export const Menu2 = () => {
                         <p className="text2">1x</p>
                         <p className="text2s">Package 3</p>
                         <p className="textharga2">Rp. 350.000,00</p>
-                        <p className="texttotalharga">Total Payment: Rp. 50.000,00</p>
+                        <p className="texttotalharga">Total Payment: Rp. 500.000,00</p>
                         <button className="buttonpay" onClick={goToPay1}>Payment</button>
                     </div>
                 </div>

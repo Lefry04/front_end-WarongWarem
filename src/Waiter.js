@@ -10,6 +10,7 @@ export const Waiter = () => {
         navigate('/dashwai')
     };
     
+
     const [currentTime, setCurrentTime] = useState("");
     const [currentDate, setCurrentDate] = useState("");
     const [dummyData, setDummyData] = useState([]);
@@ -82,6 +83,12 @@ export const Waiter = () => {
     
                 setDummyData(updatedData);
                 setSelectedRowIds([]);
+
+                setTimeout(() => {
+                    window.location.reload(true);
+                    // Display a confirmation alert after reloading
+                    alert("Reservation confirmed!");
+                }, 500);
             } catch (error) {
                 console.error("Error updating status:", error);
             }

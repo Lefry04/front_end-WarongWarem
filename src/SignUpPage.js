@@ -63,13 +63,22 @@ export const SignUpPage = () => {
 
     // Validasi bahwa semua data telah terisi
     if (!formData.username || !formData.password || !formData.confirmPassword || !formData.profileName) {
+      alert("Please fill in all fields");
       console.error("Please fill in all fields");
       return;
     }
 
     // Validasi bahwa password dan konfirmasi password sama
     if (formData.password !== formData.confirmPassword) {
+      alert("Password and confirm password do not match");
       console.error("Password and confirm password do not match");
+      return;
+    }
+
+    // Validasi bahwa panjang password adalah 6 karakter
+    if (formData.password.length !== 6) {
+      alert("Password must be 6 characters long");
+      console.error("Password must be 6 characters long");
       return;
     }
 

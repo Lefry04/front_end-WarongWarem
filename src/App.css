@@ -1412,7 +1412,7 @@
 } */
 
 .history .list {
-  max-height: 400px;
+  max-height: 200px;
   overflow-y: auto;
   overflow-x: auto;
   margin-top: 20px;
@@ -1653,6 +1653,15 @@
   font: bold;
   font-size: 15px;
   left: 920px;
+  top: 235px;
+}
+
+.waiter .de {
+  position: absolute;
+  color: #ffffff;
+  font: bold;
+  font-size: 15px;
+  left: 960px;
   top: 235px;
 }
 
