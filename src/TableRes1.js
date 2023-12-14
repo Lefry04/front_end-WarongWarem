@@ -217,7 +217,7 @@ const TableRes1 = () => {
                             onChange={handleInputChange}
                         />
                         <input
-                            placeholder="YYYY-MM-DD HH-MM-SS"
+                            placeholder="YYYY-MM-DD HH:MM:SS"
                             className="d1"
                             type="text"
                             name="time"
