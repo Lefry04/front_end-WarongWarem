@@ -23,7 +23,7 @@ export const ManHisto = () => {
         const intervalId = setInterval(updateDateTime, 1000);
 
         // Fetch data from API
-        axios.post('http://localhost:8000/api/getdata') // Replace with your actual API endpoint
+        axios.post('https://rpl2-server.my.id/api/getdata') // Replace with your actual API endpoint
             .then(response => {
                 setDummyData(response.data.reservations);
             })

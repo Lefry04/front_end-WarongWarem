@@ -1412,12 +1412,17 @@
 } */
 
 .history .list {
-  max-height: 200px;
+  max-height: 470px;
   overflow-y: auto;
   overflow-x: auto;
   margin-top: 20px;
   position: relative;
   top: 265px;
+}
+
+.history .list2 {
+  width:  826px;
+  margin-top: 10px;
 }
 
 .history .title {
@@ -1427,34 +1432,35 @@
   background-color: rgba(255, 178, 15, 0.75);
   position: absolute;
   width: 826px;
-  height: 83px;
-  top: 100px;
+  height: auto;
+  top: 110px;
   left: 105px;
   text-align: center;
   border-radius: 24px;
 }
 
-.history button {
+.history .reservation-button {
   position: relative;
   width: 826px;
   height: 140px;
   left: 105px;
-  top: 280px;
   border: none;
+  margin-top: 20px;
   margin-bottom: 10px;
   border-radius: 24px;
 }
 
 /* Styles for different statuses */
-.history button.active {
+
+.history div.active {
   background-color: rgba(157, 253, 133, 0.5);
 }
 
-.history button.waiting {
+.history div.waiting {
   background-color: rgba(255, 178, 15, 0.5);
 }
 
-.history button.inactive {
+.history div.inactive {
   background-color: rgba(255, 0, 0, 0.5); 
 }
 
@@ -1507,7 +1513,9 @@
   border: none;
   border-radius: 24px;
   height: 60px;
-  margin-top: 10px;
+  margin-top: 50px;
+  left: 350px;
+  width: 300px;
   /* Adjust margin as needed */
 }
 
@@ -1576,6 +1584,7 @@
   font: 25px;
   border-radius: 8px;
 }
+
 .waiter .text-wrapper-2 {
   color: #ffffff;
   font-family: "Poppins-Bold", Helvetica;
@@ -1696,7 +1705,7 @@
 }
 
 .waiter .back {
-  left: 524px;
+  left: 315px;
   background-color: rgba(255, 0, 0, 1);
 }
 

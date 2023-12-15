@@ -159,7 +159,7 @@ const TableRes1 = () => {
       console.log("Data yang Dikirim:", formData);
 
       const response = await Axios.post(
-        "http://localhost:8000/api/create-reservation",
+        "https://rpl2-server.my.id/api/create-reservation",
         formData
       );
 

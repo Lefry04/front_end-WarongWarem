@@ -22,7 +22,7 @@ export const ReportDaily = () => {
 
         const fetchData = async () => {
             try {
-                const response = await axios.post('http://localhost:8000/api/getdata');
+                const response = await axios.post('https://rpl2-server.my.id/api/getdata');
                 const dataWithIds = response.data.reservations.map((item, index) => ({
                     ...item,
                     id: index + 1,

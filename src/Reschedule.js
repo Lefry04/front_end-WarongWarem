@@ -27,7 +27,7 @@ const Reschedule = () => {
         const intervalId = setInterval(updateDateTime, 1000);
 
         // Fetch data from API
-        axios.post('http://localhost:8000/api/getdata')
+        axios.post('https://rpl2-server.my.id/api/getdata')
             .then(response => {
                 setDummyData(response.data.reservations.map(reservation => ({
                     ...reservation,
@@ -50,7 +50,7 @@ const Reschedule = () => {
 
         if (selectedRowId && newReservationTime.trim() !== "") {
             try {
-                const response = await axios.put('http://localhost:8000/api/change-time', {
+                const response = await axios.put('https://rpl2-server.my.id/api/change-time', {
                     id: selectedRowId,
                     new_time: newReservationTime, // Ganti nama parameter sesuai dengan yang diharapkan oleh Laravel
                 });

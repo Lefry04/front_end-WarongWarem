@@ -76,7 +76,7 @@ const ResReser1 = () => {
       console.log("Data yang Dikirim:", formData);
 
       const response = await Axios.post(
-        "http://localhost:8000/api/create-reservation",
+        "https://rpl2-server.my.id/api/create-reservation",
         formData
       );
 
@@ -125,7 +125,7 @@ const ResReser1 = () => {
                             onChange={handleInputChange}
                         />
                         <input
-                            placeholder="Select the desired date for your table reservation."
+                            placeholder="YYYY-MM-DD HH:MM:SS"
                             className="c1"
                             type="text"
                             name="time"

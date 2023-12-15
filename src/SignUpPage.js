@@ -76,14 +76,14 @@ export const SignUpPage = () => {
     }
 
     // Validasi bahwa panjang password adalah 6 karakter
-    if (formData.password.length !== 6) {
-      alert("Password must be 6 characters long");
-      console.error("Password must be 6 characters long");
+    if (formData.password.length < 3) {
+      alert("Password must be more than 3 characters long");
+      console.error("Password must be more than 3 characters long");
       return;
     }
 
     try {
-      const response = await Axios.post('http://localhost:8000/api/register', {
+      const response = await Axios.post('https://rpl2-server.my.id/api/register', {
         username: formData.username,
         password: formData.password,
         profile_name: formData.profileName,

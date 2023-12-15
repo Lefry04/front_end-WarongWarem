@@ -25,7 +25,7 @@ export const Waiter = () => {
         const intervalId = setInterval(updateDateTime, 1000);
 
         // Fetch data from API
-        axios.post('http://localhost:8000/api/getdata') // Ganti URL_API dengan URL sesuai endpoint di Laravel
+        axios.post('https://rpl2-server.my.id/api/getdata') // Ganti URL_API dengan URL sesuai endpoint di Laravel
             .then(response => {
                 setDummyData(response.data.reservations);
             })
@@ -70,7 +70,7 @@ export const Waiter = () => {
         if (selectedRowIds.length > 0) {
             try {
                 // Kirim permintaan ke server untuk memperbarui status menjadi "Active"
-                const response = await axios.put('http://localhost:8000/api/reserve', { ids: selectedRowIds });
+                const response = await axios.put('https://rpl2-server.my.id/api/reserve', { ids: selectedRowIds });
                 console.log(response.data); // Output dari server (optional)
     
                 // Perbarui status di sisi klien jika permintaan berhasil
@@ -103,7 +103,7 @@ export const Waiter = () => {
         if (selectedRowIds.length > 0) {
             try {
                 // Kirim permintaan ke server untuk memperbarui status menjadi "Inactive"
-                const response = await axios.put('http://localhost:8000/api/reject', { ids: selectedRowIds });
+                const response = await axios.put('https://rpl2-server.my.id/api/reject', { ids: selectedRowIds });
                 console.log(response.data); // Output dari server (optional)
     
                 // Perbarui status di sisi klien jika permintaan berhasil
@@ -178,8 +178,6 @@ export const Waiter = () => {
                         <p className="b">WARONGWAREM</p>
                         <p className="c">List of Reservations for Warung Rarem Customers</p>
                         <p className="d">The Reserve and Reject button will only be active when its status is 'Waiting'</p>
-                        <button className="unselect" onClick={handleUnselectAll}>Unselect all</button>
-                        <button className="select" onClick={handleSelectAll}>Select all</button>
                         <button className="reject" onClick={handleReject}>Reject</button>
                         <button className="reserve" onClick={handleReserve}>Reserve</button>
                         <button className="back" onClick={goToDashWai}>Back</button>

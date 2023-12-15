@@ -8,10 +8,10 @@ export const LoginPageCust = () => {
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const { setUserId } = useUserId();
-  
+
   const handleConfirmClick = async () => {
     try {
-      const response = await axios.post('http://localhost:8000/api/login', {
+      const response = await axios.post('https://rpl2-server.my.id/api/login', {
         username: username,
         password: password,
       });

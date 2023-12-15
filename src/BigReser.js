@@ -23,7 +23,7 @@ export const BigReser = () => {
         const intervalId = setInterval(updateDateTime, 1000);
 
         // Fetch data from API
-        axios.post('http://localhost:8000/api/getdata') // Ganti URL_API dengan URL sesuai endpoint di Laravel
+        axios.post('https://rpl2-server.my.id/api/getdata') // Ganti URL_API dengan URL sesuai endpoint di Laravel
             .then(response => {
                 setDummyData(response.data.reservations);
             })
@@ -69,7 +69,7 @@ export const BigReser = () => {
         if (selectedRowIds.length > 0) {
             try {
                 // Kirim permintaan ke server untuk memperbarui status menjadi "Active"
-                const response = await axios.put('http://localhost:8000/api/reserve', { ids: selectedRowIds });
+                const response = await axios.put('https://rpl2-server.my.id/api/reserve', { ids: selectedRowIds });
                 console.log(response.data); // Output dari server (optional)
     
                 // Perbarui status di sisi klien jika permintaan berhasil
@@ -96,7 +96,7 @@ export const BigReser = () => {
         if (selectedRowIds.length > 0) {
             try {
                 // Kirim permintaan ke server untuk memperbarui status menjadi "Inactive"
-                const response = await axios.put('http://localhost:8000/api/reject', { ids: selectedRowIds });
+                const response = await axios.put('https://rpl2-server.my.id/api/reject', { ids: selectedRowIds });
                 console.log(response.data); // Output dari server (optional)
     
                 // Perbarui status di sisi klien jika permintaan berhasil
